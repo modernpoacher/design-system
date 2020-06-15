@@ -1,0 +1,146 @@
+@import-normalize;
+@import "design-system/helpers/invisible";
+
+footer {
+  /**
+   *  IE 11 needs an explicit instruction not to shrink
+   */
+  flex-shrink: 0;
+
+  background-color: $white;
+
+  /**
+   *  This element must not size below this width
+   */
+  min-width: 320px;
+  margin: auto 0 0 0;
+
+  nav ul {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0;
+
+    &:before {
+      content: "\2022";
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .footer-content {
+    margin: 0 auto;
+
+    /**
+     *  Default padding for all routes
+     */
+    padding: 36px;
+
+    /**
+     *  This element must not size below this width
+     */
+    min-width: 244px; // 320 - (36 * 2)
+    min-height: auto;
+
+    @include breakpoint(mobile) {
+      padding: 22px;
+    }
+  }
+
+  .notices {
+    margin-top: 36px;
+
+    overflow: visible;
+
+    @mixin large {
+      overflow: hidden;
+    }
+
+    @include breakpoint(desktop) {
+      @include large;
+    }
+
+    @include breakpoint(laptop) {
+      @include large;
+    }
+
+    @include breakpoint(tablet) {
+      @include large;
+    }
+
+    .licence-notice {
+      position: relative;
+
+      @include breakpoint(desktop) {
+        float: left;
+      }
+
+      h3 {
+        @include invisible;
+        z-index: 0;
+      }
+
+      svg {
+        width: 50px;
+        height: 20px;
+
+        margin: 4px 0;
+
+        display: block;
+
+        @mixin large {
+          position: absolute;
+          top: 1px;
+          bottom: 7px;
+
+          margin: 0;
+        }
+
+        @mixin small {
+          width: 40px;
+          height: 16px;
+
+          margin: 8px 0 4px 0;
+        }
+
+        @include breakpoint(desktop) {
+          @include large;
+        }
+
+        @include breakpoint(laptop) {
+          @include small;
+        }
+
+        @include breakpoint(tablet) {
+          @include small;
+        }
+
+        @include breakpoint(mobile) {
+          @include small;
+        }
+      }
+
+      p {
+        padding: 0;
+
+        @include breakpoint(desktop) {
+          padding-left: 58px;
+        }
+      }
+    }
+
+    .copyright-notice {
+      @include breakpoint(desktop) {
+        float: right;
+        text-align: right;
+        white-space: nowrap;
+      }
+    }
+  }
+}

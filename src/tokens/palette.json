@@ -1,0 +1,258 @@
+{
+  "grey-1": {
+    "hex": "DCDCDC",
+    "description": "Grey 1"
+  },
+  "grey-2": {
+    "hex": "E6E6E6",
+    "description": "Grey 2"
+  },
+  "grey-3": {
+    "hex": "EFEFEF",
+    "description": "Grey 3"
+  },
+  "white": {
+    "hex": "FFFFFF",
+    "theme": "White"
+  },
+  "black": {
+    "hex": "000000",
+    "theme": "Black"
+  },
+  "layout": {
+    "standard": {
+      "hex": "F4F5F6",
+      "theme": "Layout",
+      "description": "Standard"
+    },
+    "background": {
+      "hex": "F4F5F6",
+      "theme": "Layout",
+      "description": "Background"
+    },
+    "edge": {
+      "hex": "DCDCDC",
+      "theme": "Layout",
+      "description": "Edge"
+    },
+    "foreground": {
+      "hex": "010E1F",
+      "theme": "Layout",
+      "description": "Foreground"
+    }
+  },
+  "action": {
+    "standard": {
+      "hex": "24548A",
+      "theme": "Action",
+      "description": "Standard"
+    },
+    "disabled": {
+      "hex": "D8D8D8",
+      "theme": "Action",
+      "description": "Disabled"
+    },
+    "triple-a": {
+      "hex": "24548A",
+      "theme": "Action",
+      "description": "Triple A"
+    },
+    "double-a": {
+      "hex": "39689E",
+      "theme": "Action",
+      "description": "Double A"
+    },
+    "single-a": {
+      "hex": "6B91BD",
+      "theme": "Action",
+      "description": "Single A"
+    },
+    "foreground": {
+      "hex": "123664",
+      "theme": "Action",
+      "description": "Foreground"
+    },
+    "edge": {
+      "hex": "39689E",
+      "theme": "Action",
+      "description": "Edge"
+    },
+    "background": {
+      "hex": "DEE7F1",
+      "theme": "Action",
+      "description": "Background"
+    }
+  },
+  "information": {
+    "standard": {
+      "hex": "F27B20",
+      "theme": "Information",
+      "description": "Standard"
+    },
+    "foreground": {
+      "hex": "171819",
+      "theme": "Information",
+      "description": "Foreground"
+    },
+    "edge": {
+      "hex": "F27B20",
+      "theme": "Information",
+      "description": "Edge"
+    },
+    "background": {
+      "hex": "FDF4E8",
+      "theme": "Information",
+      "description": "Background"
+    },
+    "text": {
+      "hex": "171819",
+      "theme": "Information",
+      "description": "Text"
+    },
+    "fill": {
+      "hex": "F27B20",
+      "theme": "Information",
+      "description": "Fill"
+    }
+  },
+  "alert": {
+    "standard": {
+      "hex": "AA0000",
+      "theme": "Alert",
+      "description": "Standard"
+    },
+    "foreground": {
+      "hex": "740000",
+      "theme": "Alert",
+      "description": "Foreground"
+    },
+    "edge": {
+      "hex": "CF0000",
+      "theme": "Alert",
+      "description": "Edge"
+    },
+    "background": {
+      "hex": "FAE1E1",
+      "theme": "Alert",
+      "description": "Background"
+    },
+    "text": {
+      "hex": "171819",
+      "theme": "Alert",
+      "description": "Text"
+    },
+    "fill": {
+      "hex": "740000",
+      "theme": "Alert",
+      "description": "Fill"
+    }
+  },
+  "pending": {
+    "standard": {
+      "hex": "F27B20",
+      "theme": "Pending",
+      "description": "Standard"
+    }
+  },
+  "accepted": {
+    "standard": {
+      "hex": "006100",
+      "theme": "Accepted",
+      "description": "Standard"
+    },
+    "triple-a": {
+      "hex": "006100",
+      "theme": "Accepted",
+      "description": "Triple A"
+    },
+    "double-a": {
+      "hex": "007700",
+      "theme": "Accepted",
+      "description": "Double A"
+    },
+    "single-a": {
+      "hex": "139913",
+      "theme": "Accepted",
+      "description": "Single A"
+    },
+    "foreground": {
+      "hex": "004000",
+      "theme": "Accepted",
+      "description": "Foreground"
+    },
+    "edge": {
+      "hex": "007700",
+      "theme": "Accepted",
+      "description": "Edge"
+    },
+    "background": {
+      "hex": "D8EBD8",
+      "theme": "Accepted",
+      "description": "Background"
+    }
+  },
+  "rejected": {
+    "standard": {
+      "hex": "AA0000",
+      "theme": "Rejected",
+      "description": "Standard"
+    },
+    "triple-a": {
+      "hex": "AA0000",
+      "theme": "Rejected",
+      "description": "Triple A"
+    },
+    "double-a": {
+      "hex": "CF0000",
+      "theme": "Rejected",
+      "description": "Double A"
+    },
+    "single-a": {
+      "hex": "FF4E4E",
+      "theme": "Rejected",
+      "description": "Single A"
+    },
+    "foreground": {
+      "hex": "740000",
+      "theme": "Rejected",
+      "description": "Foreground"
+    },
+    "edge": {
+      "hex": "CF0000",
+      "theme": "Rejected",
+      "description": "Edge"
+    },
+    "background": {
+      "hex": "FAE1E1",
+      "theme": "Rejected",
+      "description": "Background"
+    }
+  },
+  "standard-text": {
+    "hex": "171819"
+  },
+  "link": {
+    "hex": "315284",
+    "description": "Link"
+  },
+  "link-visited": {
+    "hex": "45286f",
+    "description": "Link Visited"
+  },
+  "link-hover": {
+    "hex": "000044",
+    "description": "Link Hover"
+  },
+  "link-focus": {
+    "hex": "ffffff",
+    "description": "Link Focus"
+  },
+  "link-background": {
+    "hex": "315284",
+    "description": "Link Background"
+  },
+  "link-outline": {
+    "hex": "4D90FE",
+    "description": "Link Outline"
+  }
+}

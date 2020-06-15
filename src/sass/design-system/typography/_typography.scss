@@ -1,0 +1,272 @@
+@import-normalize;
+
+@import "design-system/typography/proxima-nova";
+
+@mixin heading-xxl {
+  @include proxima-nova-extrabold;
+  color: $standard-text;
+
+  font-size: 3.5rem; // (56px from 16px base)
+  line-height: 3.75rem; // + 8
+
+  @include breakpoint (mobile) {
+    font-size: 2.5rem; // (40px from 16px base)
+    line-height: 3rem; // + 8
+  }
+}
+
+@mixin heading-xl {
+  @include proxima-nova-extrabold;
+  color: $standard-text;
+
+  font-size: 2.75rem; // (44px from 16px base)
+  line-height: 3.25rem; // + 8
+
+  @include breakpoint (mobile) {
+    font-size: 2rem; // (32px from 16px base)
+    line-height: 2.5rem; // + 8
+  }
+}
+
+@mixin heading-l {
+  @include proxima-nova-extrabold;
+  color: $standard-text;
+
+  font-size: 2rem; // (32px from 16px base)
+  line-height: 2.5rem; // + 8
+
+  @include breakpoint (mobile) {
+    font-size: 1.5rem; // (24px from 16px base)
+    line-height: 2rem; // + 8
+  }
+}
+
+@mixin heading-m {
+  @include proxima-nova-bold;
+  color: $standard-text;
+
+  font-size: 1.625rem; // (26px from 16px base)
+  line-height: 2.125rem; // + 8
+
+  @include breakpoint (mobile) {
+    font-size: 1.25rem; // (20px from 16px base)
+    line-height: 1.75rem; // + 8
+  }
+}
+
+@mixin heading-s {
+  @include proxima-nova-bold;
+  color: $standard-text;
+
+  font-size: 1.25rem; // (20px from 16px base)
+  line-height: 1.75rem; // + 8
+
+  @include breakpoint (mobile) {
+    font-size: 1rem; // (16px from 16px base)
+    line-height: 1.375rem; // + 6
+  }
+}
+
+%heading-xxl { @include heading-xxl; }
+
+%heading-xl { @include heading-xl; }
+
+%heading-l { @include heading-l; }
+
+%heading-m { @include heading-m; }
+
+%heading-s { @include heading-s; }
+
+@mixin body-l {
+  @include proxima-nova-regular;
+  color: $standard-text;
+
+  font-size: 1.5rem; // (24px from 16px base)
+  line-height: 2rem; // + 8
+
+  @include breakpoint (mobile) {
+    font-size: 1.125rem; // (18px from 16px base)
+    line-height: 1.5rem; // + 6
+  }
+}
+
+@mixin body-m {
+  @include proxima-nova-regular;
+  color: $standard-text;
+
+  font-size: 1.25rem; // (20px from 16px base)
+  line-height: 1.75rem; // + 8
+
+  @include breakpoint (mobile) {
+    font-size: 1rem; // (16px from 16px base)
+    line-height: 1.375rem; // + 6
+  }
+}
+
+@mixin body-s {
+  @include proxima-nova-regular;
+  color: $standard-text;
+
+  font-size: 1rem; // (16px from 16px base)
+  line-height: 1.375rem; // + 6
+
+  @include breakpoint (mobile) {
+    font-size: 0.875rem; // (14px from 16px base)
+    line-height: 1.25rem; // + 6
+  }
+}
+
+@mixin body-xs {
+  @include proxima-nova-regular;
+  color: $standard-text;
+
+  font-size: 0.875rem; // (14px from 16px base)
+  line-height: 1.25rem; // + 6
+
+  @include breakpoint (mobile) {
+    font-size: 0.75rem; // (12px from 16px base)
+    line-height: 1.125rem; // + 6
+  }
+}
+
+%body-l { @include body-l; }
+
+%body-m { @include body-m; }
+
+%body-s { @include body-s; }
+
+%body-xs { @include body-xs; }
+
+@mixin paragraph { @include body-m; }
+
+%paragraph { @include paragraph; }
+
+@mixin anchor {
+  @include proxima-nova-regular;
+  text-decoration: underline;
+  color: $link;
+
+  &:link {
+    text-decoration: underline;
+    color: $link;
+  }
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  &:visited {
+    color: $link-visited;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $link-background;
+    color: $link-focus;
+  }
+
+  &:focus {
+    outline-color: $link-outline;
+  }
+}
+
+%anchor { @include anchor; }
+
+@mixin list { @include body-m; }
+@mixin list-item { @include body-m; }
+
+%list { @include list-item; }
+%list-item { @include list-item; }
+
+@mixin alert {
+  @include body-s;
+  color: $alert-standard;
+}
+
+%alert { @include alert; }
+
+@mixin greeter {
+  @include proxima-nova-regular;
+  color: $standard-text;
+
+  font-size: 2.75rem; // (44px from 16px base)
+  line-height: 3.25rem; // + 8
+
+  letter-spacing: 0;
+
+  @include breakpoint (mobile) {
+    font-size: 2rem; // (32px from 16px base)
+    line-height: 2.5rem; // + 8
+  }
+}
+
+%greeter { @include greeter; }
+
+h1,
+.heading-l {
+  @extend %heading-l;
+
+  margin: 1em 0;
+}
+
+h2,
+.heading-m {
+  @extend %heading-m;
+
+  margin: 1em 0;
+}
+
+h3,
+.heading-s {
+  @extend %heading-s;
+
+  margin: 1em 0;
+}
+
+p,
+.paragraph {
+  @extend %paragraph;
+
+  margin: 1em 0;
+}
+
+a,
+.anchor {
+  @extend %anchor;
+
+  margin: 0;
+}
+
+ol,
+ul,
+dl {
+  @extend %list;
+
+  margin: 1em 0;
+}
+
+li {
+  @extend %list-item;
+
+  margin: 0;
+}
+
+.body-l {
+  @extend %body-l;
+}
+
+.body-m {
+  @extend %body-m;
+}
+
+.body-s {
+  @extend %body-s;
+}
+
+.alert {
+  @extend %alert;
+}
+
+.greeter {
+  @extend %greeter;
+}

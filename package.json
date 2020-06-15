@@ -1,0 +1,61 @@
+{
+  "name": "@modernpoacher/design-system",
+  "version": "0.0.0",
+  "description": "Modern Poacher Design System",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production npm run gulp",
+    "start": "cross-env NODE_ENV=production npm run gulp",
+    "dev": "cross-env NODE_ENV=development npm run gulp",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
+    "lint:js": "eslint *.js build",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint:css": "stylelint src/sass",
+    "lint:css:fix": "npm run lint:css -- --fix",
+    "gulp": "gulp --color",
+    "pre-commit": "npm run lint && npm run gulp -- pre-commit"
+  },
+  "keywords": [
+    "Modern",
+    "Poacher",
+    "Design",
+    "System"
+  ],
+  "author": "Jonathan Perry for Modern Poacher Limited",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-proposal-export-default-from": "^7.10.1",
+    "@babel/plugin-proposal-export-namespace-from": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "core-js": "^3.6.5",
+    "debug": "^4.1.1",
+    "eslint": "^7.2.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-import-resolver-babel-module": "^5.1.2",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "gulp": "^4.0.2",
+    "husky": "^4.2.5",
+    "sacred-fs": "^1.0.15",
+    "stylelint": "^13.6.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.17.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pre-commit"
+    }
+  },
+  "dependencies": {
+    "cross-env": "^7.0.2"
+  }
+}

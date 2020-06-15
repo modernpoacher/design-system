@@ -1,0 +1,57 @@
+@import-normalize;
+@import "design-system/helpers/invisible";
+
+header {
+  /**
+   *  IE 11 needs an explicit instruction not to shrink
+   */
+  flex-shrink: 0;
+
+  background-color: $white;
+
+  /**
+   *  This element must not size below this width
+   */
+  min-width: 320px;
+  margin: 0 0 auto 0;
+
+  .header-content {
+    margin: 0 auto;
+
+    /**
+     *  Default padding for all routes
+     */
+    padding: 22px 36px;
+
+    /**
+     *  This element must not size below this width
+     */
+    min-width: 244px; // 320 - (36 * 2)
+    min-height: auto;
+
+    overflow: hidden;
+
+    @include breakpoint(mobile) {
+      padding: 22px;
+    }
+
+    .ofgem-text-container {
+      @include invisible;
+    }
+
+    .ofgem-logo-container {
+      float: left;
+
+      width: 80px;
+      height: 36px;
+
+      .ofgem-logo {
+        display: block;
+
+        width: 80px;
+        height: auto;
+        margin: .51px 0;
+      }
+    }
+  }
+}

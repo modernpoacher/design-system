@@ -1,0 +1,355 @@
+@import "./typography";
+
+@mixin button-standard {
+  display: inline-block;
+  margin: 32px auto 0 0;
+
+  @include body-s;
+
+  @include breakpoint(mobile) {
+    margin-top: 24px;
+  }
+}
+
+@mixin anchor-standard {
+  display: inline-block;
+  margin: 32px auto 0 0;
+
+  @include body-s;
+
+  @include breakpoint(mobile) {
+    margin-top: 24px;
+  }
+}
+
+@mixin button-primary-icon {
+  display: block;
+
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  width: 24px;
+  height: 24px;
+
+  @include breakpoint (mobile) {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mask rect { fill: $white; }
+}
+
+@mixin button-primary-action {
+  outline-offset: 2px;
+
+  @include body-s;
+  @include proxima-nova-bold;
+
+  position: relative;
+
+  display: block;
+  min-width: 192px; // 224 - (16 + 16)
+  text-align: center;
+
+  color: $white;
+  background-color: $action-standard;
+
+  border: 2px solid $action-standard;
+  border-radius: 5px;
+
+  padding: 16px;
+
+  &[disabled] {
+    background-color: $action-disabled;
+
+    border: 2px solid $action-disabled;
+  }
+
+  span { display: block; }
+
+  &:hover {
+    text-decoration: underline;
+    color: $white;
+  }
+
+  &:focus {
+    background-color: $white;
+    color: $action-standard;
+
+    text-decoration: underline;
+    outline-color: $link-outline;
+
+    svg .mask rect { fill: $action-standard; }
+  }
+}
+
+@mixin button-secondary-icon {
+  display: block;
+
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  width: 24px;
+  height: 24px;
+
+  @include breakpoint (mobile) {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mask rect { fill: $action-standard; }
+}
+
+@mixin button-secondary-action {
+  outline-offset: 2px;
+
+  @include body-s;
+  @include proxima-nova-bold;
+
+  position: relative;
+
+  display: block;
+  min-width: 192px; // 224 - (16 + 16)
+  text-align: center;
+
+  color: $action-standard;
+  background-color: transparent;
+
+  border: 2px solid $action-standard;
+  border-radius: 5px;
+
+  padding: 16px;
+
+  &[disabled] {
+    background-color: $action-disabled;
+
+    border: 2px solid $action-disabled;
+  }
+
+  span { display: block; }
+
+  &:hover {
+    text-decoration: underline;
+    color: $action-standard;
+  }
+
+  &:focus {
+    background-color: $action-standard;
+    color: $white;
+
+    text-decoration: underline;
+    outline-color: $link-outline;
+
+    svg .mask rect { fill: $white; }
+  }
+}
+
+@mixin anchor-primary-icon {
+  display: block;
+
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  width: 24px;
+  height: 24px;
+
+  @include breakpoint (mobile) {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mask rect { fill: $white }
+}
+
+@mixin anchor-primary-action {
+  outline-offset: 2px;
+
+  @include body-s;
+  @include proxima-nova-bold;
+
+  position: relative;
+
+  display: block;
+  min-width: 192px; // 224 - (16 + 16)
+  text-align: center;
+
+  color: $white; // $action-standard;
+  background-color: $action-standard; // $white;
+
+  border: 2px solid $action-standard;
+  border-radius: 5px;
+
+  padding: 16px;
+
+  &.disabled {
+    background-color: $action-disabled;
+
+    border: 2px solid $action-disabled;
+  }
+
+  span { display: block; }
+
+  &:link {
+    text-decoration: none;
+    color: $white; // $action-standard;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: $white; // $action-standard;
+  }
+
+  &:visited {
+    color: $white; // $action-standard;
+  }
+
+  &:focus,
+  &:active  {
+    background-color: $white; // $action-standard;
+    color: $action-standard; // $white;
+
+    svg .mask rect { fill: $action-standard; /* $white */ }
+  }
+
+  &:focus  {
+    text-decoration: underline;
+    outline-color: $link-outline;
+  }
+}
+
+@mixin anchor-secondary-icon {
+  display: block;
+
+  position: absolute;
+
+  top: 15px;
+  left: 15px;
+
+  width: 24px;
+  height: 24px;
+
+  @include breakpoint (mobile) {
+    width: 22px;
+    height: 22px;
+  }
+
+  .mask rect { fill: $action-standard }
+}
+
+@mixin anchor-secondary-action {
+  outline-offset: 2px;
+
+  @include body-s;
+  @include proxima-nova-bold;
+
+  position: relative;
+
+  display: block;
+  min-width: 192px; // 224 - (16 + 16)
+  text-align: center;
+
+  color: $action-standard;
+  background-color: transparent;
+
+  border: 2px solid $action-standard;
+  border-radius: 5px;
+
+  padding: 16px;
+
+  &.disabled {
+    background-color: $action-disabled;
+
+    border: 2px solid $action-disabled;
+  }
+
+  span { display: block; }
+
+  &:link {
+    text-decoration: none;
+    color: $action-standard;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: $action-standard;
+  }
+
+  &:visited {
+    color: $action-standard;
+  }
+
+  &:focus,
+  &:active  {
+    background-color: $action-standard;
+    color: $white;
+
+    svg .mask rect { fill: $white }
+  }
+
+  &:focus  {
+    text-decoration: underline;
+    outline-color: $link-outline;
+  }
+}
+
+@mixin button-primary {
+  @include button-standard;
+
+  svg {
+    @include button-primary-icon;
+  }
+
+  button {
+    @include button-primary-action;
+  }
+}
+
+@mixin button-secondary {
+  @include button-standard;
+
+  svg {
+    @include button-secondary-icon;
+  }
+
+  button {
+    @include button-secondary-action;
+  }
+}
+
+@mixin anchor-primary {
+  @include anchor-standard;
+
+  svg {
+    @include anchor-primary-icon;
+  }
+
+  a {
+    @include anchor-primary-action;
+  }
+}
+
+@mixin anchor-secondary {
+  @include anchor-standard;
+
+  svg {
+    @include anchor-secondary-icon;
+  }
+
+  a {
+    @include anchor-secondary-action;
+  }
+}
+
+%button-primary { @include button-primary; }
+
+%button-secondary { @include button-secondary; }
+
+%anchor-primary { @include anchor-primary; }
+
+%anchor-secondary { @include anchor-secondary; }

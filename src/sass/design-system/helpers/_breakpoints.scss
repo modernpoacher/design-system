@@ -1,0 +1,72 @@
+
+$desktop-min: 1440px;
+
+$laptop-min: 992px;
+$tablet-min: 768px;
+$mobile-min: 320px;
+
+$large-mobile-max: 767px;
+$large-mobile-min: 576px;
+$small-mobile-max: 319px;
+
+@mixin breakpoint($name) {
+  /*
+   *  "Desktop"
+   */
+  @if $name == desktop {
+    /*
+     *  From 1440
+     */
+    @media only screen and (min-width: $desktop-min) { @content ; }
+  }
+
+  /*
+   *  "Laptop"
+   */
+  @if $name == laptop {
+    /*
+     *  Between 992 and 1439
+     */
+    @media only screen and (min-width: $laptop-min) and (max-width: $desktop-min - 1) { @content ; }
+  }
+
+  /*
+   *  "Tablet"
+   */
+  @if $name == tablet {
+    /*
+     *  Between 768 and 991
+     */
+    @media only screen and (min-width: $tablet-min) and (max-width: $laptop-min - 1) { @content ; }
+  }
+
+  /*
+   *  "Large Mobile" (Small Mobile < Mobile < Large Mobile)
+   */
+  @if $name == large-mobile {
+    /*
+     *  Between 576 and 767
+     */
+    @media only screen and (min-width: $large-mobile-min) and (max-width: $large-mobile-max) { @content ; }
+  }
+
+  /*
+   *  "Mobile" (Small Mobile < Mobile < Large Mobile)
+   */
+  @if $name == mobile {
+    /*
+     *  To 767
+     */
+    @media only screen and (max-width: $tablet-min - 1) { @content ; }
+  }
+
+  /*
+   *  "Small Mobile" (Small Mobile < Mobile < Large Mobile)
+   */
+  @if $name == small-mobile {
+    /*
+     *  To 320
+     */
+    @media only screen and (max-width: $small-mobile-max) { @content ; }
+  }
+}

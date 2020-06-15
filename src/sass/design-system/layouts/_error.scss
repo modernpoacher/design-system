@@ -1,0 +1,126 @@
+@import-normalize;
+
+@import "design-system/helpers/breakpoints";
+
+html,
+body {
+  text-size-adjust: 100%;
+
+  @include proxima-nova-regular;
+  color: $standard-text;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background-color: $white;
+
+  width: 100%;
+  height: 100%;
+
+  font-size: 16px;
+  line-height: 22px; // 6
+}
+
+main {
+  transform: translate(-50%, -50%);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  min-width: 248px;
+  max-width: 576px;
+
+  @mixin small {
+    width: 80%;
+  }
+
+  @mixin medium {
+    width: 65%;
+  }
+
+  @include breakpoint (mobile) {
+    @include small;
+  }
+
+  @include breakpoint (tablet) {
+    @include medium;
+  }
+
+  @include breakpoint (laptop) {
+    @include medium;
+  }
+
+  svg.ofgem-logo {
+    z-index: 1;
+
+    display: block;
+
+    margin: auto 0;
+
+    height: 128px;
+    width: 292.7px;
+
+    @mixin small {
+      height: 64px;
+      width: 146.35px;
+    }
+
+    @mixin medium {
+      height: 96px;
+      width: 219.5px;
+    }
+
+    @include breakpoint (mobile) {
+      @include small;
+    }
+
+    @include breakpoint (tablet) {
+      @include medium;
+    }
+
+    @include breakpoint (laptop) {
+      @include medium;
+    }
+  }
+
+  h1 {
+    display: inline-block;
+
+    line-height: 1em;
+
+    margin: 48px 0 1rem 0;
+    padding: 0;
+
+    .code {
+      @include proxima-nova-bold;
+      color: $standard-text;
+    }
+
+    .message {
+      @include proxima-nova-regular;
+      color: $standard-text;
+    }
+
+    @mixin small {
+      margin: 36px 0 1rem 0;
+    }
+
+    @include breakpoint (mobile) {
+      @include small;
+    }
+
+    @include breakpoint (tablet) {
+      @include small;
+    }
+
+    @include breakpoint (laptop) {
+      @include small;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
