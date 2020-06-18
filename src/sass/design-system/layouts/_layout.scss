@@ -212,12 +212,39 @@ main {
 
     &.radio {
       position: relative;
-      line-height: 2rem; // * 2
       padding-left: 3rem;
       margin-bottom: .5rem;
+      line-height: 2rem;
+      min-height: 2rem;
 
       &:last-of-type {
         margin-bottom: 0;
+      }
+
+      label {
+        @include breakpoint(desktop) {
+          line-height: 2rem;
+        }
+
+        @include breakpoint(laptop) {
+          line-height: 2rem;
+        }
+
+        @include breakpoint(tablet) {
+          line-height: 2rem;
+        }
+
+        @include breakpoint(mobile) {
+          line-height: 2rem;
+        }
+
+        @include breakpoint(large-mobile) {
+          line-height: 2rem;
+        }
+
+        @include breakpoint(small-mobile) {
+          line-height: 2rem;
+        }
       }
 
       label:before { // stylelint-disable-line no-descending-specificity
@@ -263,12 +290,39 @@ main {
 
     &.checkbox {
       position: relative;
-      line-height: 2rem; // * 2
       padding-left: 3rem;
       margin-bottom: .5rem;
+      line-height: 2rem;
+      min-height: 2rem;
 
       &:last-of-type {
         margin-bottom: 0;
+      }
+
+      label {
+        @include breakpoint(desktop) {
+          line-height: 2rem;
+        }
+
+        @include breakpoint(laptop) {
+          line-height: 2rem;
+        }
+
+        @include breakpoint(tablet) {
+          line-height: 2rem;
+        }
+
+        @include breakpoint(mobile) {
+          line-height: 2rem;
+        }
+
+        @include breakpoint(large-mobile) {
+          line-height: 2rem;
+        }
+
+        @include breakpoint(small-mobile) {
+          line-height: 2rem;
+        }
       }
 
       label:before { // stylelint-disable-line no-descending-specificity
