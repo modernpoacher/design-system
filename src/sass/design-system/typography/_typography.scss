@@ -1,9 +1,10 @@
 @import-normalize;
 
+@import "design-system/palette";
 @import "design-system/typography/proxima-nova";
 
 @mixin heading-xxl {
-  @include proxima-nova-extrabold;
+  @include proxima-nova-bold;
   color: $standard-text;
 
   font-size: 3.5rem; // (56px from 16px base)
@@ -16,7 +17,7 @@
 }
 
 @mixin heading-xl {
-  @include proxima-nova-extrabold;
+  @include proxima-nova-bold;
   color: $standard-text;
 
   font-size: 2.75rem; // (44px from 16px base)
@@ -29,7 +30,7 @@
 }
 
 @mixin heading-l {
-  @include proxima-nova-extrabold;
+  @include proxima-nova-bold;
   color: $standard-text;
 
   font-size: 2rem; // (32px from 16px base)
@@ -138,69 +139,34 @@
 %body-xs { @include body-xs; }
 
 @mixin paragraph { @include body-m; }
-
 %paragraph { @include paragraph; }
 
-@mixin anchor {
-  @include proxima-nova-regular;
-  text-decoration: underline;
-  color: $link;
+@mixin standard-text { @include body-m; }
+%standard-text { @include standard-text; }
 
-  &:link {
-    text-decoration: underline;
-    color: $link;
-  }
-
-  &:hover {
-    color: $link-hover;
-  }
-
-  &:visited {
-    color: $link-visited;
-  }
-
-  &:focus,
-  &:active {
-    background-color: $link-background;
-    color: $link-focus;
-  }
-
-  &:focus {
-    outline-color: $link-outline;
-  }
+@mixin primary-text {
+  @include body-m;
+  color: $primary-text;
 }
+%primary-text { @include primary-text; }
 
-%anchor { @include anchor; }
+@mixin secondary-text {
+  @include body-m;
+  color: $secondary-text;
+}
+%secondary-text { @include secondary-text; }
+
+@mixin error-standard {
+  @include body-m;
+  color: $error-standard;
+}
+%error-standard { @include error-standard; }
 
 @mixin list { @include body-m; }
 @mixin list-item { @include body-m; }
 
 %list { @include list-item; }
 %list-item { @include list-item; }
-
-@mixin alert {
-  @include body-s;
-  color: $alert-standard;
-}
-
-%alert { @include alert; }
-
-@mixin greeter {
-  @include proxima-nova-regular;
-  color: $standard-text;
-
-  font-size: 2.75rem; // (44px from 16px base)
-  line-height: 3.25rem; // + 8
-
-  letter-spacing: 0;
-
-  @include breakpoint (mobile) {
-    font-size: 2rem; // (32px from 16px base)
-    line-height: 2.5rem; // + 8
-  }
-}
-
-%greeter { @include greeter; }
 
 h1,
 .heading-l {
@@ -261,12 +227,4 @@ li {
 
 .body-s {
   @extend %body-s;
-}
-
-.alert {
-  @extend %alert;
-}
-
-.greeter {
-  @extend %greeter;
 }

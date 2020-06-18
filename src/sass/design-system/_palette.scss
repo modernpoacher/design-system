@@ -7,33 +7,17 @@ $grey-3: hex-str(map(palette, grey-3, hex));
 
 $black: hex-str(map(palette, black, hex));
 $white: hex-str(map(palette, white, hex));
-$brand: hex-str(map(palette, brand, hex));
-
-$alert-standard: hex-str(map(palette, alert, standard, hex));
-$alert-foreground: hex-str(map(palette, alert, foreground, hex));
-$alert-background: hex-str(map(palette, alert, background, hex));
-$alert-edge: hex-str(map(palette, alert, edge, hex));
-$alert-text: hex-str(map(palette, alert, text, hex));
-$alert-fill: hex-str(map(palette, alert, fill, hex));
-
-$information-standard: hex-str(map(palette, information, standard, hex));
-$information-foreground: hex-str(map(palette, information, foreground, hex));
-$information-background: hex-str(map(palette, information, background, hex));
-$information-edge: hex-str(map(palette, information, edge, hex));
-$information-text: hex-str(map(palette, information, text, hex));
-$information-fill: hex-str(map(palette, information, fill, hex));
-
-$hello: hex-str(map(palette, hello, hex));
+$focus: hex-str(map(palette, focus, hex));
 
 $pending-standard: hex-str(map(palette, pending, standard, hex));
 
-$accepted-standard: hex-str(map(palette, accepted, standard, hex));
-$accepted-triple-a: hex-str(map(palette, accepted, triple-a, hex));
-$accepted-double-a: hex-str(map(palette, accepted, double-a, hex));
-$accepted-single-a: hex-str(map(palette, accepted, single-a, hex));
-$accepted-foreground: hex-str(map(palette, accepted, foreground, hex));
-$accepted-edge: hex-str(map(palette, accepted, edge, hex));
-$accepted-background: hex-str(map(palette, accepted, background, hex));
+$resolved-standard: hex-str(map(palette, resolved, standard, hex));
+$resolved-triple-a: hex-str(map(palette, resolved, triple-a, hex));
+$resolved-double-a: hex-str(map(palette, resolved, double-a, hex));
+$resolved-single-a: hex-str(map(palette, resolved, single-a, hex));
+$resolved-foreground: hex-str(map(palette, resolved, foreground, hex));
+$resolved-edge: hex-str(map(palette, resolved, edge, hex));
+$resolved-background: hex-str(map(palette, resolved, background, hex));
 
 $rejected-standard: hex-str(map(palette, rejected, standard, hex));
 $rejected-triple-a: hex-str(map(palette, rejected, triple-a, hex));
@@ -42,9 +26,6 @@ $rejected-single-a: hex-str(map(palette, rejected, single-a, hex));
 $rejected-foreground: hex-str(map(palette, rejected, foreground, hex));
 $rejected-edge: hex-str(map(palette, rejected, edge, hex));
 $rejected-background: hex-str(map(palette, rejected, background, hex));
-
-$phase: hex-str(map(palette, phase, hex));
-$brand: hex-str(map(palette, brand, hex));
 
 $layout-background: hex-str(map(palette, layout, background, hex));
 $layout-edge: hex-str(map(palette, layout, edge, hex));
@@ -59,9 +40,17 @@ $action-foreground: hex-str(map(palette, action, foreground, hex));
 $action-edge: hex-str(map(palette, action, edge, hex));
 $action-background: hex-str(map(palette, action, background, hex));
 
-$submission-name: hex-str(map(palette, submission-name, hex));
+$error-standard: hex-str(map(palette, error, standard, hex));
+$error-triple-a: hex-str(map(palette, error, triple-a, hex));
+$error-double-a: hex-str(map(palette, error, double-a, hex));
+$error-single-a: hex-str(map(palette, error, single-a, hex));
+$error-foreground: hex-str(map(palette, error, foreground, hex));
+$error-edge: hex-str(map(palette, error, edge, hex));
+$error-background: hex-str(map(palette, error, background, hex));
 
 $standard-text: hex-str(map(palette, standard-text, hex));
+$primary-text: hex-str(map(palette, primary-text, hex));
+$secondary-text: hex-str(map(palette, secondary-text, hex));
 
 $link: hex-str(map(palette, link, hex));
 $link-hover: hex-str(map(palette, link-hover, hex));

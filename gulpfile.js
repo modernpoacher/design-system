@@ -14,4 +14,4 @@ gulp
   .task('pre-commit', preCommit)
 
 gulp
-  .task('default', (done) => done())
+  .task('default', gulp.series('pre-commit'))

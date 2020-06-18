@@ -1,4 +1,6 @@
 @import-normalize;
+@import "design-system/palette";
+@import "design-system/typography";
 @import "design-system/helpers/breakpoints";
 
 html,
@@ -32,3 +34,343 @@ main {
   padding: 0;
   border: none;
 }
+
+.shinkansen-gears {
+  padding: 0;
+  margin: 2rem 0;
+
+  li {
+    display: inline-block;
+    margin-right: .5rem;
+
+    a {
+      @include anchor-secondary-action;
+    }
+
+    &:last-of-type {
+      margin-right: auto;
+    }
+  }
+}
+
+.app {
+  max-width: 1020px;
+  margin: 0 auto;
+
+  header,
+  > div,
+  > nav {
+    padding: 0 1rem;
+  }
+
+  button {
+    @include button-primary-action;
+  }
+
+  label {
+    @include standard-text;
+    display: block;
+    padding: 0;
+    margin: 0 0 .25rem 0;
+    line-height: 2rem;
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    > legend {
+      @include standard-text;
+      padding: 0;
+      margin: 0 0 .25rem 0;
+      line-height: 2rem;
+    }
+  }
+
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    @include standard-text;
+    background-color: $white;
+    border: 2px solid $black;
+    display: inline-block;
+    padding: .25rem;
+    line-height: 2rem;
+
+    &:focus {
+      outline: 3px solid $focus;
+      outline-offset: 0;
+      box-shadow: inset 0 0 0 2px;
+      border-color: $black;
+    }
+  }
+
+  .sprocket {
+    margin: 0 0 1rem 0;
+    line-height: 1.375rem;
+
+    &.error-summary {
+      background-color: $white;
+      border: .25rem solid $error-standard;
+      display: block;
+      padding: 1rem;
+      line-height: 2rem;
+
+      h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        margin-bottom: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      li {
+        @include error-standard;
+        display: block;
+        padding: 0;
+        margin: 0 0 .25rem 0;
+      }
+
+      a {
+        @include error-standard;
+
+        &:focus {
+          outline: 3px solid transparent;
+          text-decoration: none;
+          outline-offset: 0;
+          box-shadow: 0 -2px $focus, 0 4px $black;
+          color: $standard-text;
+          background-color: $focus;
+        }
+      }
+
+      &:focus {
+        outline: 3px solid $focus;
+        outline-offset: 0;
+        border-color: $black;
+      }
+    }
+
+    &.check-answers {
+      dl {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+
+        .answer {
+          display: table-row;
+        }
+
+        dt,
+        dd {
+          display: table-cell;
+          padding: .25rem 0;
+          border-bottom: 2px solid $grey-1;
+        }
+
+        .answer-title {
+          @include heading-s;
+          width: 30%;
+          padding-right: 1rem;
+        }
+
+        .answer-value {
+          width: 50%;
+        }
+
+        .change-answer {
+          width: 20%;
+          padding-left: 1rem;
+          text-align: right;
+
+          .visually-hidden-text {
+            @include invisible;
+          }
+        }
+      }
+    }
+
+    .sprocket {
+      margin-bottom: 0;
+    }
+
+    &.fieldset {
+      legend {
+        @include heading-m;
+        padding: 0;
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+
+  .cog {
+    margin: 0 0 1rem 0;
+    line-height: 1.375rem;
+
+    &.radio {
+      position: relative;
+      line-height: 2rem; // * 2
+      padding-left: 3rem;
+      margin-bottom: .5rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      label:before { // stylelint-disable-line no-descending-specificity
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        height: 32px;
+        top: 0;
+        width: 32px;
+        overflow: hidden;
+        border: 2px solid currentColor;
+        border-radius: 50%;
+        content: "\200b";
+        background-color: $white;
+      }
+
+      input { // stylelint-disable-line no-descending-specificity
+        position: absolute;
+        left: .5rem;
+        top: .5rem;
+
+        &:focus + label:before { // stylelint-disable-line no-descending-specificity
+          box-shadow: 0 0 0 2px $focus;
+        }
+
+        &:checked + label:after {
+          box-sizing: border-box;
+          position: absolute;
+          top: .5rem;
+          bottom: .5rem;
+          left: .5rem;
+          right: .5rem;
+          width: 1rem;
+          height: 1rem;
+          overflow: hidden;
+          border: 2px solid currentColor;
+          border-radius: 50%;
+          content: "\200b";
+          background-color: $black;
+        }
+      }
+    }
+
+    &.checkbox {
+      position: relative;
+      line-height: 2rem; // * 2
+      padding-left: 3rem;
+      margin-bottom: .5rem;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      label:before { // stylelint-disable-line no-descending-specificity
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        height: 2rem;
+        top: 0;
+        width: 2rem;
+        overflow: hidden;
+        border: 2px solid currentColor;
+        content: "\200b";
+        background-color: $white;
+      }
+
+      input { // stylelint-disable-line no-descending-specificity
+        position: absolute;
+        left: .5rem;
+        top: .5rem;
+
+        &:focus + label:before { // stylelint-disable-line no-descending-specificity
+          box-shadow: 0 0 0 2px $focus;
+        }
+
+        &:checked + label:after {
+          box-sizing: border-box;
+          position: absolute;
+          top: 0.625rem; // 10px;
+          bottom: 0.625rem; // 10px;
+          left: 0.3125rem; // 5px;
+          width: 1.375rem; // 22px;
+          height: 0.625rem; // 10px;
+          overflow: hidden;
+          border-bottom: 4px solid currentColor;
+          border-left: 4px solid currentColor;
+          content: "\200b";
+          background-color: $white;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+    &.error {
+      border-left: .25rem solid $error-standard;
+
+      input:not([type="checkbox"]):not([type="radio"]),
+      select,
+      textarea {
+        border: 2px solid $error-standard;
+
+        &:focus {
+          border-color: $black;
+        }
+      }
+
+      &.radio,
+      &.checkbox {
+        padding-left: 4rem;
+
+        input { // stylelint-disable-line no-descending-specificity
+          left: 1.5rem;
+        }
+
+        label:before { // stylelint-disable-line no-descending-specificity
+          left: 1rem;
+
+          border: 2px solid $error-standard;
+        }
+      }
+
+      &.radio {
+        input:checked + label:after {
+          left: 1.5rem;
+        }
+      }
+
+      &.checkbox {
+        input:checked + label:after {
+          left: 1.3125rem; // 21px;
+        }
+      }
+    }
+
+    .description {
+      @include secondary-text;
+      display: block;
+      padding: 0;
+      margin: 0 0 .25rem 0;
+    }
+
+    .error-message {
+      @include error-standard;
+      display: block;
+      padding: 0;
+      margin: 0 0 .25rem 0;
+    }
+  }
+
+  .sprocket .cog:last-of-type {
+    margin-bottom: 0;
+  }
+
+  & > .sprocket.fieldset > fieldset > legend { @include heading-l; margin: 1em 0; }
+}
+

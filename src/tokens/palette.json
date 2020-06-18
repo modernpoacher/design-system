@@ -19,6 +19,10 @@
     "hex": "000000",
     "theme": "Black"
   },
+  "focus": {
+    "hex": "4D90FE",
+    "description": "Focus"
+  },
   "layout": {
     "standard": {
       "hex": "F4F5F6",
@@ -83,68 +87,41 @@
       "description": "Background"
     }
   },
-  "information": {
-    "standard": {
-      "hex": "F27B20",
-      "theme": "Information",
-      "description": "Standard"
-    },
-    "foreground": {
-      "hex": "171819",
-      "theme": "Information",
-      "description": "Foreground"
-    },
-    "edge": {
-      "hex": "F27B20",
-      "theme": "Information",
-      "description": "Edge"
-    },
-    "background": {
-      "hex": "FDF4E8",
-      "theme": "Information",
-      "description": "Background"
-    },
-    "text": {
-      "hex": "171819",
-      "theme": "Information",
-      "description": "Text"
-    },
-    "fill": {
-      "hex": "F27B20",
-      "theme": "Information",
-      "description": "Fill"
-    }
-  },
-  "alert": {
+  "error": {
     "standard": {
       "hex": "AA0000",
-      "theme": "Alert",
+      "theme": "Rejected",
       "description": "Standard"
+    },
+    "triple-a": {
+      "hex": "AA0000",
+      "theme": "Rejected",
+      "description": "Triple A"
+    },
+    "double-a": {
+      "hex": "CF0000",
+      "theme": "Rejected",
+      "description": "Double A"
+    },
+    "single-a": {
+      "hex": "FF4E4E",
+      "theme": "Rejected",
+      "description": "Single A"
     },
     "foreground": {
       "hex": "740000",
-      "theme": "Alert",
+      "theme": "Rejected",
       "description": "Foreground"
     },
     "edge": {
       "hex": "CF0000",
-      "theme": "Alert",
+      "theme": "Rejected",
       "description": "Edge"
     },
     "background": {
       "hex": "FAE1E1",
-      "theme": "Alert",
+      "theme": "Rejected",
       "description": "Background"
-    },
-    "text": {
-      "hex": "171819",
-      "theme": "Alert",
-      "description": "Text"
-    },
-    "fill": {
-      "hex": "740000",
-      "theme": "Alert",
-      "description": "Fill"
     }
   },
   "pending": {
@@ -154,7 +131,7 @@
       "description": "Standard"
     }
   },
-  "accepted": {
+  "resolved": {
     "standard": {
       "hex": "006100",
       "theme": "Accepted",
@@ -230,6 +207,12 @@
   },
   "standard-text": {
     "hex": "171819"
+  },
+  "primary-text": {
+    "hex": "171819"
+  },
+  "secondary-text": {
+    "hex": "626A6E"
   },
   "link": {
     "hex": "315284",

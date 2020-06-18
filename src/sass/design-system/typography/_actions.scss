@@ -50,16 +50,16 @@
   position: relative;
 
   display: block;
-  min-width: 192px; // 224 - (16 + 16)
+  // min-width: 192px; // 224 - (16 + 16)
   text-align: center;
 
   color: $white;
   background-color: $action-standard;
 
   border: 2px solid $action-standard;
-  border-radius: 5px;
+  border-radius: 4px;
 
-  padding: 16px;
+  padding: 8px 16px;
 
   &[disabled] {
     background-color: $action-disabled;
@@ -79,9 +79,7 @@
     color: $action-standard;
 
     text-decoration: underline;
-    outline-color: $link-outline;
-
-    svg .mask rect { fill: $action-standard; }
+    outline-color: $focus;
   }
 }
 
@@ -113,16 +111,16 @@
   position: relative;
 
   display: block;
-  min-width: 192px; // 224 - (16 + 16)
+  // min-width: 192px; // 224 - (16 + 16)
   text-align: center;
 
   color: $action-standard;
   background-color: transparent;
 
   border: 2px solid $action-standard;
-  border-radius: 5px;
+  border-radius: 4px;
 
-  padding: 16px;
+  padding: 8px 16px;
 
   &[disabled] {
     background-color: $action-disabled;
@@ -142,9 +140,7 @@
     color: $white;
 
     text-decoration: underline;
-    outline-color: $link-outline;
-
-    svg .mask rect { fill: $white; }
+    outline-color: $focus;
   }
 }
 
@@ -176,16 +172,16 @@
   position: relative;
 
   display: block;
-  min-width: 192px; // 224 - (16 + 16)
+  // min-width: 192px; // 224 - (16 + 16)
   text-align: center;
 
-  color: $white; // $action-standard;
-  background-color: $action-standard; // $white;
+  color: $white;
+  background-color: $action-standard;
 
   border: 2px solid $action-standard;
-  border-radius: 5px;
+  border-radius: 4px;
 
-  padding: 16px;
+  padding: 8px 16px;
 
   &.disabled {
     background-color: $action-disabled;
@@ -197,24 +193,22 @@
 
   &:link {
     text-decoration: none;
-    color: $white; // $action-standard;
+    color: $white;
   }
 
   &:hover {
     text-decoration: underline;
-    color: $white; // $action-standard;
+    color: $white;
   }
 
   &:visited {
-    color: $white; // $action-standard;
+    color: $white;
   }
 
   &:focus,
   &:active  {
-    background-color: $white; // $action-standard;
-    color: $action-standard; // $white;
-
-    svg .mask rect { fill: $action-standard; /* $white */ }
+    background-color: $white;
+    color: $action-standard;
   }
 
   &:focus  {
@@ -251,16 +245,16 @@
   position: relative;
 
   display: block;
-  min-width: 192px; // 224 - (16 + 16)
+  // min-width: 192px; // 224 - (16 + 16)
   text-align: center;
 
   color: $action-standard;
   background-color: transparent;
 
   border: 2px solid $action-standard;
-  border-radius: 5px;
+  border-radius: 4px;
 
-  padding: 16px;
+  padding: 8px 16px;
 
   &.disabled {
     background-color: $action-disabled;
@@ -288,8 +282,6 @@
   &:active  {
     background-color: $action-standard;
     color: $white;
-
-    svg .mask rect { fill: $white }
   }
 
   &:focus  {
@@ -301,10 +293,6 @@
 @mixin button-primary {
   @include button-standard;
 
-  svg {
-    @include button-primary-icon;
-  }
-
   button {
     @include button-primary-action;
   }
@@ -312,10 +300,6 @@
 
 @mixin button-secondary {
   @include button-standard;
-
-  svg {
-    @include button-secondary-icon;
-  }
 
   button {
     @include button-secondary-action;
@@ -325,10 +309,6 @@
 @mixin anchor-primary {
   @include anchor-standard;
 
-  svg {
-    @include anchor-primary-icon;
-  }
-
   a {
     @include anchor-primary-action;
   }
@@ -336,10 +316,6 @@
 
 @mixin anchor-secondary {
   @include anchor-standard;
-
-  svg {
-    @include anchor-secondary-icon;
-  }
 
   a {
     @include anchor-secondary-action;
@@ -353,3 +329,34 @@
 %anchor-primary { @include anchor-primary; }
 
 %anchor-secondary { @include anchor-secondary; }
+
+@mixin anchor {
+  @include proxima-nova-regular;
+  text-decoration: underline;
+  color: $link;
+
+  &:link {
+    text-decoration: underline;
+    color: $link;
+  }
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  &:visited {
+    color: $link-visited;
+  }
+
+  &:focus,
+  &:active {
+    background-color: $link-focus; // $link-background;
+    color: $link-focus;
+  }
+
+  &:focus {
+    outline-color: $link-outline;
+  }
+}
+
+%anchor { @include anchor; }
