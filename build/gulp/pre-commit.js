@@ -32,13 +32,15 @@ const addPackageChanges = () => (
 )
 
 export default async () => {
+  log('pre-commit')
+
   try {
     const b = await hasPackageVersionChanges()
     if (!b) {
       await patchPackageVersion()
       await addPackageChanges()
     }
-  } catch ({ message }) {
-    console.error(message)
+  } catch ({ message = 'No error message defined' }) {
+    log(message)
   }
 }

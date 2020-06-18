@@ -1,6 +1,6 @@
 {
   "name": "@modernpoacher/design-system",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Modern Poacher Design System",
   "scripts": {
     "build": "cross-env NODE_ENV=production npm run gulp",
