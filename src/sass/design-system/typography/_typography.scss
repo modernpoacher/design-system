@@ -1,7 +1,8 @@
 @import-normalize;
 
 @import "design-system/palette";
-@import "design-system/typography/proxima-nova";
+
+@import "./proxima-nova";
 
 @mixin heading-xxl {
   @include proxima-nova-bold;

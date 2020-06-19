@@ -1,0 +1,21 @@
+@import "design-system/typography/actions";
+
+@mixin gears {
+  padding: 0;
+  margin: 2rem 0;
+
+  li {
+    display: inline-block;
+    margin-right: .5rem;
+
+    a {
+      @include anchor-secondary-action;
+    }
+
+    &:last-of-type {
+      margin-right: auto;
+    }
+  }
+}
+
+%gears { @include gears; }
