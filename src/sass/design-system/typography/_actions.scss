@@ -37,8 +37,6 @@
     width: 22px;
     height: 22px;
   }
-
-  .mask rect { fill: $white; }
 }
 
 @mixin button-primary-action {
@@ -79,7 +77,7 @@
     color: $action-standard;
 
     text-decoration: underline;
-    outline-color: $focus;
+    outline-color: $outline;
   }
 }
 
@@ -98,8 +96,6 @@
     width: 22px;
     height: 22px;
   }
-
-  .mask rect { fill: $action-standard; }
 }
 
 @mixin button-secondary-action {
@@ -140,7 +136,7 @@
     color: $white;
 
     text-decoration: underline;
-    outline-color: $focus;
+    outline-color: $outline;
   }
 }
 
@@ -159,8 +155,6 @@
     width: 22px;
     height: 22px;
   }
-
-  .mask rect { fill: $white }
 }
 
 @mixin anchor-primary-action {
@@ -232,8 +226,6 @@
     width: 22px;
     height: 22px;
   }
-
-  .mask rect { fill: $action-standard }
 }
 
 @mixin anchor-secondary-action {

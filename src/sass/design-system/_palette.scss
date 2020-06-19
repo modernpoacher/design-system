@@ -7,7 +7,8 @@ $grey-3: hex-str(map(palette, grey-3, hex));
 
 $black: hex-str(map(palette, black, hex));
 $white: hex-str(map(palette, white, hex));
-$focus: hex-str(map(palette, focus, hex));
+
+$outline: hex-str(map(palette, outline, hex));
 
 $pending-standard: hex-str(map(palette, pending, standard, hex));
 

@@ -19,8 +19,8 @@
     "hex": "000000",
     "theme": "Black"
   },
-  "focus": {
-    "hex": "4D90FE",
+  "outline": {
+    "hex": "F27B20",
     "description": "Focus"
   },
   "layout": {
@@ -235,7 +235,7 @@
     "description": "Link Background"
   },
   "link-outline": {
-    "hex": "4D90FE",
+    "hex": "F27B20",
     "description": "Link Outline"
   }
 }
