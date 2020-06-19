@@ -142,6 +142,34 @@
 @mixin paragraph { @include body-m; }
 %paragraph { @include paragraph; }
 
+@mixin anchor {
+  @include proxima-nova-regular;
+  text-decoration: underline;
+  color: $link; // #4D90FE;
+
+  &:link {
+    text-decoration: underline;
+    color: $link; // #4D90FE;
+  }
+
+  &:hover {
+    color: $link-hover; // #003078;
+  }
+
+  &:visited {
+    color: $link-visited; // #4c2c92;
+  }
+
+  &:focus,
+  &:active  {
+    outline: 2px solid transparent;
+    background-color: $link-background; // #FFDD00;
+    color: $standard-text; // #171819;
+  }
+}
+
+%anchor { @include anchor; }
+
 @mixin standard-text { @include body-m; }
 %standard-text { @include standard-text; }
 

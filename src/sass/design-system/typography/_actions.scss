@@ -50,7 +50,6 @@
   position: relative;
 
   display: block;
-  // min-width: 192px; // 224 - (16 + 16)
   text-align: center;
 
   color: $white;
@@ -71,15 +70,16 @@
 
   &:hover {
     text-decoration: underline;
-    color: $white;
   }
 
   &:focus {
-    background-color: $white;
-    color: $action-standard;
+    color: $standard-text;
+    background-color: $outline;
+
+    border: 2px solid $outline;
 
     text-decoration: underline;
-    outline-color: $outline;
+    outline-color: $standard-text;
   }
 }
 
@@ -109,7 +109,6 @@
   position: relative;
 
   display: block;
-  // min-width: 192px; // 224 - (16 + 16)
   text-align: center;
 
   color: $action-standard;
@@ -161,6 +160,8 @@
 
 @mixin anchor-primary-action {
   outline-offset: 2px;
+  outline-width: 1px;
+  outline-style: auto;
 
   @include body-s;
   @include proxima-nova-bold;
@@ -168,7 +169,6 @@
   position: relative;
 
   display: block;
-  // min-width: 192px; // 224 - (16 + 16)
   text-align: center;
 
   color: $white;
@@ -232,6 +232,8 @@
 
 @mixin anchor-secondary-action {
   outline-offset: 2px;
+  outline-width: 1px;
+  outline-style: auto;
 
   @include body-s;
   @include proxima-nova-bold;
@@ -239,7 +241,6 @@
   position: relative;
 
   display: block;
-  // min-width: 192px; // 224 - (16 + 16)
   text-align: center;
 
   color: $action-standard;
@@ -324,33 +325,3 @@
 
 %anchor-secondary { @include anchor-secondary; }
 
-@mixin anchor {
-  @include proxima-nova-regular;
-  text-decoration: underline;
-  color: $link;
-
-  &:link {
-    text-decoration: underline;
-    color: $link;
-  }
-
-  &:hover {
-    color: $link-hover;
-  }
-
-  &:visited {
-    color: $link-visited;
-  }
-
-  &:focus,
-  &:active {
-    background-color: $link-focus; // $link-background;
-    color: $link-focus;
-  }
-
-  &:focus {
-    outline-color: $link-outline;
-  }
-}
-
-%anchor { @include anchor; }

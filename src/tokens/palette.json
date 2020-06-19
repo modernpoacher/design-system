@@ -20,7 +20,7 @@
     "theme": "Black"
   },
   "outline": {
-    "hex": "F27B20",
+    "hex": "FFDD00",
     "description": "Focus"
   },
   "layout": {
@@ -215,15 +215,15 @@
     "hex": "626A6E"
   },
   "link": {
-    "hex": "315284",
+    "hex": "4D90FE",
     "description": "Link"
   },
   "link-visited": {
-    "hex": "45286f",
+    "hex": "4c2c92",
     "description": "Link Visited"
   },
   "link-hover": {
-    "hex": "000044",
+    "hex": "003078",
     "description": "Link Hover"
   },
   "link-focus": {
@@ -231,11 +231,11 @@
     "description": "Link Focus"
   },
   "link-background": {
-    "hex": "315284",
+    "hex": "FFDD00",
     "description": "Link Background"
   },
   "link-outline": {
-    "hex": "F27B20",
+    "hex": "FFDD00",
     "description": "Link Outline"
   }
 }
