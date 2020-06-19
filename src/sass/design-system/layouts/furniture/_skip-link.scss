@@ -1,5 +1,7 @@
 @import-normalize;
 
+@import "design-system/palette";
+
 .skip-link {
   @extend %anchor;
 
