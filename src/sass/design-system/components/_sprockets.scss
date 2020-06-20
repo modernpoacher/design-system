@@ -3,6 +3,7 @@
 
 @import "./sprockets/error-summary";
 @import "./sprockets/check-answers";
+@import "./sprockets/error";
 
 @mixin sprockets {
   margin: 0 0 1rem 0;
@@ -21,6 +22,22 @@
       @include heading-m;
       padding: 0;
       margin: 0 0 1rem 0;
+    }
+
+    &.error { @include error; }
+
+    .description {
+      @include secondary-text;
+      display: block;
+      padding: 0;
+      margin: 0 0 .25rem 0;
+    }
+
+    .error-message {
+      @include error-standard;
+      display: block;
+      padding: 0;
+      margin: 0 0 .25rem 0;
     }
   }
 }
