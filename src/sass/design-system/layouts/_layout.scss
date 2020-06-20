@@ -43,7 +43,11 @@ main {
   max-width: 1020px;
   margin: 0 auto;
 
-  > header,
+  > header.alpha,
+  > header.omega,
+  > header.embark,
+  > header.debark,
+  > header.confirm,
   > div.alpha,
   > div.omega,
   > div.embark,
