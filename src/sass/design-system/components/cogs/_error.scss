@@ -1,5 +1,6 @@
 @mixin error {
   border-left: .25rem solid $error-standard;
+  padding: 0 1rem;
 
   input:not([type="checkbox"]):not([type="radio"]),
   select,
