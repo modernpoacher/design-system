@@ -6,3 +6,9 @@
 
 src/fonts
 docs
+
+# User-defined NPM configuration
+.npmrc
+
+# User-defined NVM configuration
+.nvmrc
