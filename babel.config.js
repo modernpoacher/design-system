@@ -4,8 +4,8 @@ const log = debug('@modernpoacher/design-system')
 
 const {
   env: {
-    NODE_ENV = 'development',
-    DEBUG = '@modernpoacher/design-system'
+    DEBUG = '@modernpoacher/design-system',
+    NODE_ENV = 'development'
   }
 } = process
 
@@ -47,10 +47,14 @@ const plugins = [
   ]
 ]
 
-module.exports = (api = { cache: { using: () => log({ NODE_ENV, default: true }) } }) => {
+function using () {
   log({ NODE_ENV })
 
-  api.cache.using(() => NODE_ENV)
+  return NODE_ENV === 'production'
+}
+
+module.exports = (api) => {
+  if (api) api.cache.using(using)
 
   return {
     presets,
