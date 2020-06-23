@@ -1,10 +1,10 @@
 {
   "name": "@modernpoacher/design-system",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "Modern Poacher Design System",
   "scripts": {
     "build": "cross-env NODE_ENV=production npm run gulp",
-    "start": "cross-env NODE_ENV=production npm run gulp",
+    "start": "npm run build",
     "dev": "cross-env NODE_ENV=development npm run gulp",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
@@ -25,7 +25,7 @@
   "repository": "https://github.com/modernpoacher/design-system.git",
   "license": "MIT",
   "dependencies": {
-    "cross-env": "^7.0.2"
+    "debug": "^4.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
@@ -39,7 +39,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "core-js": "^3.6.5",
-    "debug": "^4.1.1",
+    "cross-env": "^7.0.2",
     "eslint": "^7.3.1",
     "eslint-config-standard": "^14.1.1",
     "eslint-import-resolver-babel-module": "^5.1.2",
