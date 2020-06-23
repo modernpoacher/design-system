@@ -6,7 +6,7 @@ import {
 
 const log = debug('@modernpoacher/design-system:build:gulp:pre-commit')
 
-log('`Design System` is awake')
+log('`design-system` is awake')
 
 const PACKAGE = /-+\s+"version":\s"(\d+\.\d+\.\d+)",\s+\++\s+"version":\s"(\d+\.\d+\.\d+)",\s+/s
 const OPTIONS = {
