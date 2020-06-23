@@ -12,6 +12,7 @@
 
 .gitignore
 
+build
 gulpfile.js
 
 # NPM
