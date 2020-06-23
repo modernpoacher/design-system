@@ -11,12 +11,14 @@ const {
 
 debug.enable(DEBUG)
 
-log('`design-system` is awake')
+log('`@modernpoacher/design-system` is awake')
 
 function env () {
   log({ NODE_ENV })
 
-  return NODE_ENV === 'production'
+  return (
+    NODE_ENV === 'production'
+  )
 }
 
 const presets = [
