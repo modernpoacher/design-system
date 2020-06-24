@@ -1,14 +1,14 @@
 {
   "name": "@modernpoacher/design-system",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Modern Poacher Design System",
   "scripts": {
-    "build": "cross-env NODE_ENV=production npm run gulp",
-    "start": "npm run build",
-    "dev": "cross-env NODE_ENV=development npm run gulp",
+    "build": "npm run gulp",
+    "start": "cross-env NODE_ENV=production npm run build",
+    "dev": "cross-env NODE_ENV=development npm run build",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
-    "lint:js": "eslint *.js build",
+    "lint:js": "eslint .",
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:css": "stylelint src/sass",
     "lint:css:fix": "npm run lint:css -- --fix",
@@ -24,6 +24,9 @@
   "author": "Jonathan Perry for Modern Poacher Limited <modernpoacher@modernpoacher.com>",
   "repository": "https://github.com/modernpoacher/design-system.git",
   "license": "MIT",
+  "engines": {
+    "node": ">=12.18.1"
+  },
   "dependencies": {
     "debug": "^4.1.1"
   },

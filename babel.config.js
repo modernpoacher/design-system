@@ -26,9 +26,9 @@ const presets = [
     '@babel/env', {
       useBuiltIns: 'entry',
       targets: {
-        node: 'current'
+        node: '12.8.1'
       },
-      corejs: '3.0.1'
+      corejs: 3
     }
   ]
 ]
