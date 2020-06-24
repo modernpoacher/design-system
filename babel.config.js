@@ -23,7 +23,14 @@ const presets = [
     '@babel/env', {
       useBuiltIns: 'entry',
       targets: {
-        node: '12.18.1'
+        node: '12.18.1',
+        browsers: [
+          'last 4 versions',
+          'safari >= 9',
+          'ios >= 8',
+          'ie >= 9',
+          '> 2%'
+        ]
       },
       corejs: 3
     }
