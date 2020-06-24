@@ -2,6 +2,18 @@
   "name": "@modernpoacher/design-system",
   "version": "0.0.21",
   "description": "Modern Poacher Design System",
+  "keywords": [
+    "Modern",
+    "Poacher",
+    "Design",
+    "System"
+  ],
+  "author": "Jonathan Perry for Modern Poacher Limited <modernpoacher@modernpoacher.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=12.18.1"
+  },
+  "repository": "https://github.com/modernpoacher/design-system.git",
   "scripts": {
     "build": "npm run gulp",
     "start": "cross-env NODE_ENV=production npm run build",
@@ -14,18 +26,6 @@
     "lint:css:fix": "npm run lint:css -- --fix",
     "gulp": "gulp --color",
     "pre-commit": "npm run lint && npm run gulp -- pre-commit"
-  },
-  "keywords": [
-    "Modern",
-    "Poacher",
-    "Design",
-    "System"
-  ],
-  "author": "Jonathan Perry for Modern Poacher Limited <modernpoacher@modernpoacher.com>",
-  "repository": "https://github.com/modernpoacher/design-system.git",
-  "license": "MIT",
-  "engines": {
-    "node": ">=12.18.1"
   },
   "dependencies": {
     "debug": "^4.1.1"
