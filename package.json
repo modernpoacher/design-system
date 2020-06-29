@@ -1,6 +1,6 @@
 {
   "name": "@modernpoacher/design-system",
-  "version": "0.0.21",
+  "version": "0.0.23",
   "description": "Modern Poacher Design System",
   "keywords": [
     "Modern",
@@ -46,14 +46,14 @@
     "eslint": "^7.3.1",
     "eslint-config-standard": "^14.1.1",
     "eslint-import-resolver-babel-module": "^5.1.2",
-    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react": "^7.20.1",
     "eslint-plugin-standard": "^4.0.1",
     "gulp": "^4.0.2",
     "husky": "^4.2.5",
-    "sacred-fs": "^1.0.15",
+    "sacred-fs": "^1.0.17",
     "stylelint": "^13.6.1",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-scss": "^3.18.0"

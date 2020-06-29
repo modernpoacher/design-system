@@ -21,7 +21,7 @@ function env () {
 const presets = [
   [
     '@babel/env', {
-      useBuiltIns: 'entry',
+      useBuiltIns: 'usage',
       targets: {
         node: '12.18.1',
         browsers: [
