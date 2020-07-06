@@ -13,6 +13,8 @@
 .gitignore
 
 build
+docs
+src/fonts
 gulpfile.js
 
 # NPM
