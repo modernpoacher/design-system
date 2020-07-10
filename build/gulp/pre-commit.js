@@ -8,7 +8,7 @@ const log = debug('@modernpoacher/design-system:build:gulp:pre-commit')
 
 log('`@modernpoacher/design-system` is awake')
 
-const PACKAGE = /-+\s+"version":\s"(\d+\.\d+\.\d+)",\s+\++\s+"version":\s"(\d+\.\d+\.\d+)",\s+/s
+const PACKAGE_VERSION_CHANGES = /-+\s+"version":\s"(\d+\.\d+\.\d+)",\s+\++\s+"version":\s"(\d+\.\d+\.\d+)",\s+/s
 
 const HAS_STAGED_CHANGES = /Changes to be committed/s
 
@@ -20,13 +20,13 @@ const OPTIONS = {
 
 export const hasPackageVersionChanges = () => (
   new Promise((resolve, reject) => {
-    exec('git diff HEAD origin/master package.json', OPTIONS, (e, v) => (!e) ? resolve(PACKAGE.test(v)) : reject(e))
+    exec('git diff HEAD origin/master package.json', OPTIONS, (e, v) => (!e) ? resolve(PACKAGE_VERSION_CHANGES.test(v)) : reject(e))
   })
 )
 
 export const notPackageVersionChanges = () => (
   new Promise((resolve, reject) => {
-    exec('git diff HEAD origin/master package.json', OPTIONS, (e, v) => (!e) ? resolve(PACKAGE.test(v) !== true) : reject(e))
+    exec('git diff HEAD origin/master package.json', OPTIONS, (e, v) => (!e) ? resolve(PACKAGE_VERSION_CHANGES.test(v) !== true) : reject(e))
   })
 )
 
