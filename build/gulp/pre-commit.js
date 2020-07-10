@@ -18,40 +18,46 @@ const OPTIONS = {
   maxBuffer: 1024 * 500
 }
 
-const hasPackageVersionChanges = () => ( // eslint-disable-line
+export const hasPackageVersionChanges = () => (
   new Promise((resolve, reject) => {
     exec('git diff HEAD origin/master package.json', OPTIONS, (e, v) => (!e) ? resolve(PACKAGE.test(v)) : reject(e))
   })
 )
 
-const notPackageVersionChanges = () => (
+export const notPackageVersionChanges = () => (
   new Promise((resolve, reject) => {
     exec('git diff HEAD origin/master package.json', OPTIONS, (e, v) => (!e) ? resolve(PACKAGE.test(v) !== true) : reject(e))
   })
 )
 
-const hasStagedChanges = () => (
+export const hasStagedChanges = () => (
   new Promise((resolve, reject) => {
     exec('git status', OPTIONS, (e, v) => (!e) ? resolve(HAS_STAGED_CHANGES.test(v)) : reject(e))
   })
 )
 
-const notStagedChanges = () => (
+export const notStagedChanges = () => (
   new Promise((resolve, reject) => {
     exec('git status', OPTIONS, (e, v) => (!e) ? resolve(NOT_STAGED_CHANGES.test(v)) : reject(e))
   })
 )
 
-const patchPackageVersion = () => (
+export const notPushedChanges = () => (
   new Promise((resolve, reject) => {
-    exec('npm version patch -m %s -n --no-git-tag-version --no-verify', OPTIONS, (e) => (!e) ? resolve() : reject(e))
+    exec('git log origin/master..HEAD', OPTIONS, (e, v) => (!e) ? resolve(!!v) : reject(e))
   })
 )
 
-const addPackageVersionChanges = () => (
-  new Promise((resolve, reject) => {
-    exec('git add package.json package-lock.json', OPTIONS, (e) => (!e) ? resolve() : reject(e))
-  })
+export const patchPackageVersion = () => (
+    new Promise((resolve, reject) => {
+      exec('npm version patch -m %s -n --no-git-tag-version --no-verify', OPTIONS, (e) => (!e) ? resolve() : reject(e))
+    })
+)
+
+export const addPackageVersionChanges = () => (
+    new Promise((resolve, reject) => {
+      exec('git add package.json package-lock.json', OPTIONS, (e) => (!e) ? resolve() : reject(e))
+    })
 )
 
 export default async function preCommit () {
@@ -66,7 +72,7 @@ export default async function preCommit () {
         await addPackageVersionChanges()
       }
     }
-  } catch ({ message = 'No error message defined' }) {
-    log(message)
+  } catch ({ code = 'NONE', message = 'No error message defined' }) {
+    log({ code, message })
   }
 }
