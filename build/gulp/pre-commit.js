@@ -49,15 +49,15 @@ export const notPushedChanges = () => (
 )
 
 export const patchPackageVersion = () => (
-    new Promise((resolve, reject) => {
-      exec('npm version patch -m %s -n --no-git-tag-version --no-verify', OPTIONS, (e) => (!e) ? resolve() : reject(e))
-    })
+  new Promise((resolve, reject) => {
+    exec('npm version patch -m %s -n --no-git-tag-version --no-verify', OPTIONS, (e) => (!e) ? resolve() : reject(e))
+  })
 )
 
 export const addPackageVersionChanges = () => (
-    new Promise((resolve, reject) => {
-      exec('git add package.json package-lock.json', OPTIONS, (e) => (!e) ? resolve() : reject(e))
-    })
+  new Promise((resolve, reject) => {
+    exec('git add package.json package-lock.json', OPTIONS, (e) => (!e) ? resolve() : reject(e))
+  })
 )
 
 export default async function preCommit () {
