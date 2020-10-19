@@ -1,6 +1,6 @@
 {
   "name": "@modernpoacher/design-system",
-  "version": "0.0.129",
+  "version": "0.0.130",
   "description": "Modern Poacher Design System",
   "keywords": [
     "Modern",
@@ -38,7 +38,7 @@
     "@babel/plugin-proposal-export-namespace-from": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
     "@babel/register": "^7.12.1",
-    "babel-eslint": "^10.1.0",
+    "@babel/eslint-parser": "^7.12.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "core-js": "^3.6.5",
