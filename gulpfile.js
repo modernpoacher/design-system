@@ -7,11 +7,11 @@ require('@babel/register')({
 const gulp = require('gulp')
 
 const {
-  preCommit
+  default: preCommit
 } = require('./build/gulp')
 
 gulp
   .task('pre-commit', preCommit)
 
 gulp
-  .task('default', (done) => done())
+  .task('default', gulp.series('pre-commit'))
