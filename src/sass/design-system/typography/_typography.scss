@@ -67,6 +67,32 @@
   }
 }
 
+@mixin heading-xxs {
+  @include proxima-nova-bold;
+  color: $standard-text;
+
+  font-size: 0.875rem; // (14px from 16px base)
+  line-height: 1.25rem; // + 6
+
+  @include breakpoint (mobile) {
+    font-size: 0.75rem; // (12px from 16px base)
+    line-height: 1.125rem; // + 6
+  }
+}
+
+@mixin heading-xs {
+  @include proxima-nova-bold;
+  color: $standard-text;
+
+  font-size: 1rem; // (16px from 16px base)
+  line-height: 1.375rem; // + 6
+
+  @include breakpoint (mobile) {
+    font-size: 0.875rem; // (14px from 16px base)
+    line-height: 1.25rem; // + 6
+  }
+}
+
 %heading-xxl { @include heading-xxl; }
 
 %heading-xl { @include heading-xl; }
@@ -76,6 +102,21 @@
 %heading-m { @include heading-m; }
 
 %heading-s { @include heading-s; }
+
+%heading-xs { @include heading-xs; }
+
+@mixin body-xl {
+  @include proxima-nova-regular;
+  color: $standard-text;
+
+  font-size: 2rem; // (32px from 16px base)
+  line-height: 2.5rem; // + 8
+
+  @include breakpoint (mobile) {
+    font-size: 1.5rem; // (24px from 16px base)
+    line-height: 2rem; // + 8
+  }
+}
 
 @mixin body-l {
   @include proxima-nova-regular;
@@ -128,6 +169,8 @@
     line-height: 1.125rem; // + 6
   }
 }
+
+%body-xl { @include body-xl; }
 
 %body-l { @include body-l; }
 
