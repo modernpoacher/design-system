@@ -1,6 +1,6 @@
 {
   "name": "@modernpoacher/design-system",
-  "version": "0.0.226",
+  "version": "0.0.227",
   "description": "Modern Poacher Design System",
   "keywords": [
     "Modern",
@@ -51,7 +51,7 @@
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-react": "^7.22.0",
     "gulp": "^4.0.2",
-    "husky": "^5.0.9",
+    "husky": "^5.1.0",
     "stylelint": "^13.11.0",
     "stylelint-config-recommended-scss": "^4.2.0",
     "stylelint-scss": "^3.19.0"
