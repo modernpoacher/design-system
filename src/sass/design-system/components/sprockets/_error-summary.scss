@@ -9,9 +9,8 @@
   padding: 1rem;
   line-height: 2rem;
 
-  h2 {
+  & > h2:first-child {
     margin-top: 0;
-    margin-bottom: 1rem;
   }
 
   ul {

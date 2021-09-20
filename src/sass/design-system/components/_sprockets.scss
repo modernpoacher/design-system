@@ -6,16 +6,14 @@
 @import "./sprockets/error";
 
 @mixin sprockets {
+  padding: 0;
   margin: 0 0 1rem 0;
+
   line-height: 1.375rem;
 
   &.error-summary { @include error-summary; }
 
   &.check-answers { @include check-answers; }
-
-  .sprocket {
-    margin-bottom: 0;
-  }
 
   &.fieldset {
     legend {
@@ -39,6 +37,13 @@
       padding: 0;
       margin: 0 0 .25rem 0;
     }
+  }
+
+  /**
+   *  Descendants
+   */
+  .sprocket {
+    margin-bottom: 0;
   }
 }
 

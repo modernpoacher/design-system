@@ -3,6 +3,10 @@
 @import "design-system/helpers/invisible";
 
 @mixin check-answers {
+  & > h2:first-child {
+    margin-top: 0;
+  }
+
   dl {
     display: table;
     width: 100%;
