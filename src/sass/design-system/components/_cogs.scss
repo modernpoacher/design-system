@@ -6,7 +6,17 @@
 @import "./cogs/error";
 
 @mixin cogs {
-  margin: 0 0 1rem 0;
+  padding: 0;
+  margin: 1rem 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   line-height: 1.375rem;
 
   &.radio { @include radio; }
