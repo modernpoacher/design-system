@@ -1,6 +1,6 @@
 {
   "name": "@modernpoacher/design-system",
-  "version": "0.0.431",
+  "version": "0.0.432",
   "description": "Modern Poacher Design System",
   "keywords": [
     "Modern",
@@ -11,7 +11,7 @@
   "author": "Jonathan Perry for Modern Poacher Limited <modernpoacher@modernpoacher.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=12.19.0"
+    "node": ">=16.13.0"
   },
   "repository": "https://github.com/modernpoacher/design-system.git",
   "scripts": {
