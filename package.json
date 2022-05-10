@@ -43,7 +43,7 @@
     "@modernpoacher/hooks": "^1.0.90",
     "babel-loader": "^8.2.5",
     "babel-plugin-module-resolver": "^4.1.0",
-    "core-js": "^3.22.4",
+    "core-js": "^3.22.5",
     "cross-env": "^7.0.3",
     "eslint": "7.32.0",
     "eslint-config-standard": "^17.0.0",
@@ -52,7 +52,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "5.2.0",
     "gulp": "^4.0.2",
-    "husky": "^7.0.4",
+    "husky": "^8.0.1",
     "stylelint": "14.6.1",
     "stylelint-config-recommended-scss": "^6.0.0",
     "stylelint-scss": "^4.2.0"
