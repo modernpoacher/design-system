@@ -43,7 +43,7 @@
     "@modernpoacher/hooks": "^1.0.138",
     "babel-loader": "^8.2.5",
     "babel-plugin-module-resolver": "^4.1.0",
-    "core-js": "^3.23.3",
+    "core-js": "^3.23.4",
     "cross-env": "^7.0.3",
     "eslint": "^8.19.0",
     "eslint-config-standard": "^17.0.0",
