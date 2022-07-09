@@ -55,6 +55,6 @@
     "husky": "^8.0.1",
     "stylelint": "^14.9.1",
     "stylelint-config-recommended-scss": "^6.0.0",
-    "stylelint-scss": "^4.2.0"
+    "stylelint-scss": "^4.3.0"
   }
 }
