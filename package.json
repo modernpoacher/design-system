@@ -40,7 +40,7 @@
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@babel/preset-env": "^7.19.4",
     "@babel/register": "^7.18.9",
-    "@modernpoacher/hooks": "^1.0.234",
+    "@modernpoacher/hooks": "^1.0.235",
     "babel-loader": "^8.2.5",
     "babel-plugin-module-resolver": "^4.1.0",
     "core-js": "^3.26.0",
@@ -54,7 +54,7 @@
     "gulp": "^4.0.2",
     "husky": "^8.0.1",
     "stylelint": "^14.14.0",
-    "stylelint-config-recommended-scss": "^7.0.0",
+    "stylelint-config-recommended-scss": "^8.0.0",
     "stylelint-scss": "^4.3.0"
   }
 }
