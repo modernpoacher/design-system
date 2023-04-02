@@ -40,7 +40,7 @@
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@babel/preset-env": "^7.21.4",
     "@babel/register": "^7.21.0",
-    "@modernpoacher/hooks": "^1.0.356",
+    "@modernpoacher/hooks": "^1.0.357",
     "babel-loader": "^9.1.2",
     "babel-plugin-module-resolver": "^5.0.0",
     "core-js": "^3.29.1",
