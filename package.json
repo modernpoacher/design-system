@@ -54,7 +54,7 @@
     "gulp": "^4.0.2",
     "husky": "^8.0.3",
     "stylelint": "^15.6.0",
-    "stylelint-config-recommended-scss": "^10.0.0",
+    "stylelint-config-recommended-scss": "^11.0.0",
     "stylelint-scss": "^4.6.0"
   }
 }
