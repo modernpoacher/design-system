@@ -15,31 +15,23 @@
   },
   "repository": "https://github.com/modernpoacher/design-system.git",
   "scripts": {
-    "build": "npm run gulp",
-    "start": "cross-env NODE_ENV=production npm run build",
-    "dev": "cross-env NODE_ENV=development npm run build",
     "lint": "npm run lint:js && npm run lint:css",
     "lint:fix": "npm run lint:js:fix && npm run lint:css:fix",
     "lint:js": "eslint .",
     "lint:js:fix": "npm run lint:js -- --fix",
     "lint:css": "stylelint src/sass",
-    "lint:css:fix": "npm run lint:css -- --fix",
-    "gulp": "gulp --color",
-    "pre-commit": "npm run lint",
-    "post-commit": "cross-env DEBUG=@modernpoacher/hooks,@modernpoacher/hooks:* npm run gulp -- post-commit"
+    "lint:css:fix": "npm run lint:css -- --fix"
   },
   "dependencies": {
     "debug": "^4.3.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.21.5",
     "@babel/core": "^7.21.8",
     "@babel/eslint-parser": "^7.21.8",
     "@babel/plugin-proposal-class-properties": "^7.18.6",
     "@babel/plugin-proposal-export-default-from": "^7.18.10",
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
     "@babel/preset-env": "^7.21.5",
-    "@babel/register": "^7.21.0",
     "@modernpoacher/hooks": "^1.0.390",
     "babel-loader": "^9.1.2",
     "babel-plugin-module-resolver": "^5.0.0",
@@ -51,7 +43,6 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
-    "gulp": "^4.0.2",
     "husky": "^8.0.3",
     "stylelint": "^15.6.0",
     "stylelint-config-recommended-scss": "^11.0.0",

@@ -52,8 +52,7 @@ const plugins = [
       root: ['./src'],
       cwd: 'babelrc',
       alias: {
-        'design-system': '.',
-        build: './build'
+        'design-system': '.'
       }
     }
   ]
