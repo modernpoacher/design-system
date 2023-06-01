@@ -4,7 +4,6 @@
 .github
 .husky
 
-.browserslistrc
 .editorconfig
 .eslintignore
 .eslintrc
@@ -20,3 +19,6 @@ src/fonts
 # NPM
 .npmignore
 .npmrc
+
+# NVM
+.nvmrc

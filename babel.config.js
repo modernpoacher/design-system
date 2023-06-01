@@ -22,38 +22,10 @@ const presets = [
   [
     '@babel/env', {
       targets: {
-        node: 'current',
-        browsers: [
-          'last 4 versions',
-          'safari >= 9',
-          'ios >= 8',
-          'ie >= 9',
-          '> 2%'
-        ]
+        node: 'current'
       },
       useBuiltIns: 'usage',
       corejs: 3
-    }
-  ]
-]
-
-const plugins = [
-  '@babel/proposal-export-default-from',
-  '@babel/proposal-export-namespace-from',
-  [
-    '@babel/proposal-class-properties',
-    {
-      loose: false
-    }
-  ],
-  [
-    'module-resolver',
-    {
-      root: ['./src'],
-      cwd: 'babelrc',
-      alias: {
-        'design-system': '.'
-      }
     }
   ]
 ]
@@ -62,7 +34,6 @@ module.exports = (api) => {
   if (api) api.cache.using(env)
 
   return {
-    presets,
-    plugins
+    presets
   }
 }
