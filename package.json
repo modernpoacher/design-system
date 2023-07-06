@@ -26,16 +26,16 @@
     "debug": "^4.3.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.6",
-    "@babel/eslint-parser": "^7.22.6",
-    "@babel/preset-env": "^7.22.6",
-    "@modernpoacher/hooks": "^1.0.422",
+    "@babel/core": "^7.22.7",
+    "@babel/eslint-parser": "^7.22.7",
+    "@babel/preset-env": "^7.22.7",
+    "@modernpoacher/hooks": "^1.0.423",
     "core-js": "^3.31.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.44.0",
     "eslint-config-standard": "^17.1.0",
     "husky": "^8.0.3",
-    "stylelint": "^15.10.0",
+    "stylelint": "^15.10.1",
     "stylelint-config-recommended-scss": "^12.0.0",
     "stylelint-scss": "^5.0.1"
   }
