@@ -39,7 +39,7 @@ main {
   border: none;
 }
 
-@mixin zashiki {
+@mixin design-system {
   max-width: 1020px;
   margin: 0 auto;
 
@@ -114,4 +114,4 @@ main {
   }
 }
 
-%zashiki { @include zashiki; }
+%design-system { @include design-system; }
