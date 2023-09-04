@@ -3,6 +3,7 @@
 
 @import "./sprockets/error-summary";
 @import "./sprockets/check-answers";
+@import "./sprockets/table";
 @import "./sprockets/error";
 
 @mixin sprockets {
@@ -22,6 +23,8 @@
   &.error-summary { @include error-summary; }
 
   &.check-answers { @include check-answers; }
+
+  &.table { @include table; }
 
   &.fieldset {
     legend {

@@ -1,0 +1,44 @@
+@import "design-system/palette";
+@import "design-system/typography";
+@import "design-system/helpers/invisible";
+
+@mixin table {
+  & > caption:first-child {
+    margin-top: 0;
+  }
+
+  table {
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    th,
+    td {
+      text-align: left;
+      vertical-align: middle;
+      padding: .25rem 0;
+      border-bottom: 2px solid $grey-1;
+    }
+
+    th {
+      @include heading-s;
+      padding-right: 1rem;
+
+      &:last-child {
+        padding-right: 0
+      }
+    }
+
+    td {
+      @include body-s;
+      padding-right: 1rem;
+
+      &:last-child {
+        padding-right: 0
+      }
+    }
+  }
+}
+
+%table { @include table; }

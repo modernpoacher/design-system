@@ -287,6 +287,13 @@ li {
   margin: 0;
 }
 
+caption {
+  @extend %heading-m;
+
+  margin: 1em 0;
+  text-align: left;
+}
+
 .body-l {
   @extend %body-l;
 }
