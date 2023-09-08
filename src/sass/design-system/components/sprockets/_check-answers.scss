@@ -2,7 +2,7 @@
 @import "design-system/typography";
 @import "design-system/helpers/invisible";
 
-@mixin check-answers {
+@mixin sprocket-check-answers {
   & > h2:first-child {
     margin-top: 0;
   }
@@ -45,4 +45,4 @@
   }
 }
 
-%check-answers { @include check-answers; }
+%sprocket-check-answers { @include sprocket-check-answers; }

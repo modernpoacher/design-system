@@ -1,4 +1,4 @@
-@mixin error {
+@mixin sprocket-error {
   border-left: .25rem solid $error-standard;
 
   input:not([type="checkbox"]):not([type="radio"]),
@@ -39,4 +39,4 @@
   }
 }
 
-%error { @include error; }
+%sprocket-error { @include sprocket-error; }

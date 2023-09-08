@@ -1,38 +1,10 @@
-@mixin cog-checkbox {
+@mixin gremlin-checkbox {
   position: relative;
-  padding-left: 3rem;
   margin-bottom: .5rem;
   min-height: 2rem;
 
   &:last-of-type {
     margin-bottom: 0;
-  }
-
-  label {
-    @include breakpoint(mobile) {
-      padding-top: 0.375rem;
-    }
-
-    @include breakpoint(large-mobile) {
-      padding-top: 0.375rem;
-    }
-
-    @include breakpoint(small-mobile) {
-      padding-top: 0.375rem;
-    }
-  }
-
-  label:before {
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    height: 2rem;
-    top: 0;
-    width: 2rem;
-    overflow: hidden;
-    border: 2px solid currentColor;
-    content: "\200b";
-    background-color: $white;
   }
 
   input {
@@ -59,7 +31,25 @@
       background-color: $white;
       transform: rotate(-45deg);
     }
+
+    & + label {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  label:before {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    height: 2rem;
+    top: 0;
+    width: 2rem;
+    overflow: hidden;
+    border: 2px solid currentColor;
+    content: "\200b";
+    background-color: $white;
   }
 }
 
-%cog-checkbox { @include cog-checkbox; }
+%gremlin-checkbox { @include gremlin-checkbox; }

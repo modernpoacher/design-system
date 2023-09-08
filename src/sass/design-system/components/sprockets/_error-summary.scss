@@ -2,7 +2,7 @@
 @import "design-system/typography";
 @import "design-system/helpers/invisible";
 
-@mixin error-summary {
+@mixin sprocket-error-summary {
   background-color: $white;
   border: .25rem solid $error-standard;
   display: block;
@@ -46,4 +46,4 @@
   }
 }
 
-%error-summary { @include error-summary; }
+%sprocket-error-summary { @include sprocket-error-summary; }

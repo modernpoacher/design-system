@@ -3,7 +3,6 @@
 
 @import "./sprockets/error-summary";
 @import "./sprockets/check-answers";
-@import "./sprockets/table";
 @import "./sprockets/error";
 
 @mixin sprockets {
@@ -20,11 +19,9 @@
 
   line-height: 1.375rem;
 
-  &.error-summary { @include error-summary; }
+  &.error-summary { @include sprocket-error-summary; }
 
-  &.check-answers { @include check-answers; }
-
-  &.table { @include table; }
+  &.check-answers { @include sprocket-check-answers; }
 
   &.fieldset {
     legend {
@@ -33,7 +30,7 @@
       margin-top: 0
     }
 
-    &.error { @include error; }
+    &.error { @include sprocket-error; }
 
     .description {
       @include secondary-text;

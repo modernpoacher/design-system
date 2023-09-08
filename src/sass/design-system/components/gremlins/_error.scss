@@ -1,4 +1,4 @@
-@mixin cog-error {
+@mixin gremlin-error {
   border-left: .25rem solid $error-standard;
   padding: 0 1rem;
 
@@ -40,4 +40,4 @@
   }
 }
 
-%cog-error { @include cog-error; }
+%gremlin-error { @include gremlin-error; }

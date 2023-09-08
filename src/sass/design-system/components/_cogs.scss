@@ -19,11 +19,11 @@
 
   line-height: 1.375rem;
 
-  &.radio { @include radio; }
+  &.radio { @include cog-radio; }
 
-  &.checkbox { @include checkbox; }
+  &.checkbox { @include cog-checkbox; }
 
-  &.error { @include error; }
+  &.error { @include cog-error; }
 
   .description {
     @include secondary-text;
