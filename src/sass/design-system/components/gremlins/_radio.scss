@@ -7,6 +7,20 @@
     margin-bottom: 0;
   }
 
+  label:before {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    height: 32px;
+    top: 0;
+    width: 32px;
+    overflow: hidden;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    content: "\200b";
+    background-color: $white;
+  }
+
   input {
     position: absolute;
     left: .5rem;
@@ -36,20 +50,6 @@
       margin: 0;
       padding: 0;
     }
-  }
-
-  label:before {
-    box-sizing: border-box;
-    position: absolute;
-    left: 0;
-    height: 32px;
-    top: 0;
-    width: 32px;
-    overflow: hidden;
-    border: 2px solid currentColor;
-    border-radius: 50%;
-    content: "\200b";
-    background-color: $white;
   }
 }
 
