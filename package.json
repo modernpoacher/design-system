@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=18.5.0"
+    "node": ">=18.12.0"
   },
   "repository": "https://github.com/modernpoacher/design-system.git",
   "scripts": {
@@ -33,7 +33,7 @@
     "@babel/core": "^7.22.17",
     "@babel/eslint-parser": "^7.22.15",
     "@babel/preset-env": "^7.22.15",
-    "@modernpoacher/hooks": "^1.0.433",
+    "@modernpoacher/hooks": "^1.0.434",
     "core-js": "^3.32.2",
     "cross-env": "^7.0.3",
     "eslint": "^8.49.0",
