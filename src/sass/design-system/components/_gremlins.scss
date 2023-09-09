@@ -24,6 +24,16 @@
   &.checkbox { @include gremlin-checkbox; }
 
   &.error { @include gremlin-error; }
+
+  &.fieldset {
+    legend {
+      @include heading-m;
+      padding: 0;
+      margin-top: 0
+    }
+
+    &.error { @include gremlin-error; }
+  }
 }
 
 %gremlins { @include gremlins; }
