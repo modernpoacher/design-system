@@ -36,7 +36,7 @@
     "@modernpoacher/hooks": "^1.0.443",
     "core-js": "^3.33.2",
     "cross-env": "^7.0.3",
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "eslint-config-standard": "^17.1.0",
     "husky": "^8.0.3",
     "stylelint": "^15.11.0",
