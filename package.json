@@ -30,10 +30,10 @@
     "debug": "^4.3.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.1",
+    "@babel/core": "^7.24.3",
     "@babel/eslint-parser": "^7.24.1",
-    "@babel/preset-env": "^7.24.1",
-    "@modernpoacher/hooks": "^1.0.468",
+    "@babel/preset-env": "^7.24.3",
+    "@modernpoacher/hooks": "^1.0.469",
     "core-js": "^3.36.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
