@@ -14,59 +14,74 @@ $small-mobile-max: 319px;
    *  "Desktop"
    */
   @if $name == desktop {
+    $min-width: $desktop-min;
+
     /*
      *  From 1440
      */
-    @media only screen and (min-width: $desktop-min) { @content ; }
+    @media only screen and (min-width: $min-width) { @content ; }
   }
 
   /*
    *  "Laptop"
    */
   @if $name == laptop {
+    $min-width: $laptop-min;
+    $max-width: $desktop-min - 1;
+
     /*
      *  Between 992 and 1439
      */
-    @media only screen and (min-width: $laptop-min) and (max-width: $desktop-min - 1) { @content ; }
+    @media only screen and (min-width: $min-width) and (max-width: $max-width) { @content ; }
   }
 
   /*
    *  "Tablet"
    */
   @if $name == tablet {
+    $min-width: $tablet-min;
+    $max-width: $laptop-min - 1;
+
     /*
      *  Between 768 and 991
      */
-    @media only screen and (min-width: $tablet-min) and (max-width: $laptop-min - 1) { @content ; }
+    @media only screen and (min-width: $min-width) and (max-width: $max-width) { @content ; }
   }
 
   /*
    *  "Large Mobile" (Small Mobile < Mobile < Large Mobile)
    */
   @if $name == large-mobile {
+    $min-width: $large-mobile-min;
+    $max-width: $large-mobile-max;
+
     /*
      *  Between 576 and 767
      */
-    @media only screen and (min-width: $large-mobile-min) and (max-width: $large-mobile-max) { @content ; }
+    @media only screen and (min-width: $min-width) and (max-width: $max-width) { @content ; }
   }
 
   /*
    *  "Mobile" (Small Mobile < Mobile < Large Mobile)
    */
   @if $name == mobile {
+    $max-width: $tablet-min - 1;
+
     /*
      *  To 767
      */
-    @media only screen and (max-width: $tablet-min - 1) { @content ; }
+    @media only screen and (max-width: $max-width) { @content ; }
   }
 
   /*
    *  "Small Mobile" (Small Mobile < Mobile < Large Mobile)
    */
   @if $name == small-mobile {
+    $max-width: $small-mobile-max;
+
     /*
      *  To 320
      */
-    @media only screen and (max-width: $small-mobile-max) { @content ; }
+    @media only screen and (max-width: $max-width) { @content ; }
   }
 }
