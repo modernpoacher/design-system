@@ -27,7 +27,7 @@
     "lint:js:fix": "npm run lint:js -- --fix"
   },
   "dependencies": {
-    "debug": "^4.3.5"
+    "debug": "^4.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.24.9",
