@@ -30,7 +30,10 @@
       margin-top: 0
     }
 
-    &.error { @include sprocket-error; }
+    &.error {
+      @include sprocket-error;
+      padding-left: 1rem;
+    }
 
     .description {
       @include secondary-text;
