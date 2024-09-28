@@ -14,5 +14,8 @@ node_modules
 # Deps
 .depsrc
 
+# Hooks
+.husky/hooks
+
 src/fonts
 docs
