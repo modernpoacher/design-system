@@ -25,8 +25,11 @@
 
     .answer-title {
       @include heading-s;
-      width: 30%;
-      padding-right: 1rem;
+
+      & { // stylelint-disable-line no-duplicate-selectors
+        width: 30%;
+        padding-right: 1rem;
+      }
     }
 
     .answer-value {

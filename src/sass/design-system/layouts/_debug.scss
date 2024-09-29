@@ -9,40 +9,40 @@
 
 %debug {
   position: fixed;
-  right: .25em;
-  top: .25em;
+  right: 0.25em;
+  top: 0.25em;
   border: 1px dashed $standard-text;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 body:after {
   @extend %debug-text;
   @extend %debug;
 
-  content: 'Default';
+  content: "Default";
 
   @include breakpoint(desktop) {
-    content: 'Desktop';
+    content: "Desktop";
   }
 
   @include breakpoint(laptop) {
-    content: 'Laptop';
+    content: "Laptop";
   }
 
   @include breakpoint(tablet) {
-    content: 'Tablet';
+    content: "Tablet";
   }
 
   @include breakpoint(mobile) {
-    content: 'Mobile';
+    content: "Mobile";
   }
 
   @include breakpoint(large-mobile) {
-    content: '(L) Mobile';
+    content: "(L) Mobile";
   }
 
   @include breakpoint(small-mobile) {
-    content: '(S) Mobile';
+    content: "(S) Mobile";
   }
 }
 

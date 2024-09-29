@@ -11,21 +11,25 @@ body {
   text-size-adjust: 100%;
 
   @include proxima-nova-regular;
-  color: $standard-text;
 
-  margin: 0;
-  padding: 0;
-  border: none;
+  // stylelint-disable-next-line no-duplicate-selectors
+  & {
+    color: $standard-text;
 
-  background-color: $white;
+    margin: 0;
+    padding: 0;
+    border: none;
 
-  width: 100%;
-  height: 100%;
+    background-color: $white;
 
-  font-size: 16px;
-  line-height: 22px; // 16 + 6
+    width: 100%;
+    height: 100%;
 
-  overflow: auto;
+    font-size: 16px;
+    line-height: 22px; // 16 + 6
+
+    overflow: auto;
+  }
 }
 
 /**
@@ -57,16 +61,24 @@ main {
     padding: 0 1rem;
   }
 
-  header h1 { @include heading-xxl; }
+  header h1 {
+    @include heading-xxl;
+  }
 
-  button { @include button-primary-action; }
+  button {
+    @include button-primary-action;
+  }
 
   label {
     @include standard-text;
-    display: block;
-    padding: 0;
-    margin: 0 0 .25rem 0;
-    line-height: 2rem;
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      display: block;
+      padding: 0;
+      margin: 0 0 0.25rem 0;
+      line-height: 2rem;
+    }
   }
 
   fieldset {
@@ -75,9 +87,13 @@ main {
     border: none;
     legend {
       @include heading-m;
-      padding: 0;
-      margin: 0 0 1em 0; // EM
-      border: none;
+
+      // stylelint-disable-next-line no-duplicate-selectors
+      & {
+        padding: 0;
+        margin: 0 0 1em 0; // EM
+        border: none;
+      }
     }
   }
 
@@ -85,11 +101,15 @@ main {
   select,
   textarea {
     @include standard-text;
-    background-color: $white;
-    border: 2px solid $black;
-    display: inline-block;
-    padding: .25rem;
-    line-height: 2rem;
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      background-color: $white;
+      border: 2px solid $black;
+      display: inline-block;
+      padding: 0.25rem;
+      line-height: 2rem;
+    }
 
     &:focus {
       outline: 3px solid $outline;
@@ -99,11 +119,17 @@ main {
     }
   }
 
-  .gremlin { @include gremlins; }
+  .gremlin {
+    @include gremlins;
+  }
 
-  .sprocket { @include sprockets; }
+  .sprocket {
+    @include sprockets;
+  }
 
-  .cog { @include cogs; }
+  .cog {
+    @include cogs;
+  }
 
   .sprocket .cog:last-of-type {
     margin-bottom: 0;
@@ -112,9 +138,14 @@ main {
   > .sprocket.fieldset > fieldset > legend {
     @include heading-l;
 
-    padding: 0;
-    margin: 0 0 1em 0; // EM
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      padding: 0;
+      margin: 0 0 1em 0; // EM
+    }
   }
 }
 
-%design-system { @include design-system; }
+%design-system {
+  @include design-system;
+}

@@ -6,11 +6,15 @@
 
   li {
     display: inline-block;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 
     a {
       @include anchor-secondary-action;
-      outline-color: transparent;
+
+      // stylelint-disable-next-line no-duplicate-selectors
+      & {
+        outline-color: transparent;
+      }
     }
 
     &:last-of-type {
@@ -19,4 +23,6 @@
   }
 }
 
-%gears { @include gears; }
+%gears {
+  @include gears;
+}

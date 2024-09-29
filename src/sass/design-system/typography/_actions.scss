@@ -35,7 +35,7 @@
   width: 24px;
   height: 24px;
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     width: 22px;
     height: 22px;
   }
@@ -45,20 +45,27 @@
   outline-offset: 2px;
 
   @include body-s;
-  @include proxima-nova-bold;
 
-  position: relative;
+  // stylelint-disable-next-line no-duplicate-selectors
+  & {
+    @include proxima-nova-bold;
+  }
 
-  display: block;
-  text-align: center;
+  // stylelint-disable-next-line no-duplicate-selectors
+  & {
+    position: relative;
 
-  color: $white;
-  background-color: $action-standard;
+    display: block;
+    text-align: center;
 
-  border: 2px solid $action-standard;
-  border-radius: 4px;
+    color: $white;
+    background-color: $action-standard;
 
-  padding: 8px 16px;
+    border: 2px solid $action-standard;
+    border-radius: 4px;
+
+    padding: 8px 16px;
+  }
 
   &[disabled] {
     background-color: $action-disabled;
@@ -66,7 +73,9 @@
     border: 2px solid $action-disabled;
   }
 
-  span { display: block; }
+  span {
+    display: block;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -94,7 +103,7 @@
   width: 24px;
   height: 24px;
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     width: 22px;
     height: 22px;
   }
@@ -104,20 +113,27 @@
   outline-offset: 2px;
 
   @include body-s;
-  @include proxima-nova-bold;
 
-  position: relative;
+  // stylelint-disable-next-line no-duplicate-selectors
+  & {
+    @include proxima-nova-bold;
+  }
 
-  display: block;
-  text-align: center;
+  // stylelint-disable-next-line no-duplicate-selectors
+  & {
+    position: relative;
 
-  color: $action-standard;
-  background-color: transparent;
+    display: block;
+    text-align: center;
 
-  border: 2px solid $action-standard;
-  border-radius: 4px;
+    color: $action-standard;
+    background-color: transparent;
 
-  padding: 8px 16px;
+    border: 2px solid $action-standard;
+    border-radius: 4px;
+
+    padding: 8px 16px;
+  }
 
   &[disabled] {
     background-color: $action-disabled;
@@ -125,7 +141,9 @@
     border: 2px solid $action-disabled;
   }
 
-  span { display: block; }
+  span {
+    display: block;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -152,7 +170,7 @@
   width: 24px;
   height: 24px;
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     width: 22px;
     height: 22px;
   }
@@ -164,20 +182,27 @@
   outline-style: auto;
 
   @include body-s;
-  @include proxima-nova-bold;
 
-  position: relative;
+  // stylelint-disable-next-line no-duplicate-selectors
+  & {
+    @include proxima-nova-bold;
+  }
 
-  display: block;
-  text-align: center;
+  // stylelint-disable-next-line no-duplicate-selectors
+  & {
+    position: relative;
 
-  color: $white;
-  background-color: $action-standard;
+    display: block;
+    text-align: center;
 
-  border: 2px solid $action-standard;
-  border-radius: 4px;
+    color: $white;
+    background-color: $action-standard;
 
-  padding: 8px 16px;
+    border: 2px solid $action-standard;
+    border-radius: 4px;
+
+    padding: 8px 16px;
+  }
 
   &.disabled {
     background-color: $action-disabled;
@@ -185,16 +210,26 @@
     border: 2px solid $action-disabled;
   }
 
-  span { display: block; }
+  span {
+    display: block;
+  }
 
   &:link {
     text-decoration: none;
-    color: $white;
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      color: $white;
+    }
   }
 
   &:hover {
     text-decoration: underline;
-    color: $white;
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      color: $white;
+    }
   }
 
   &:visited {
@@ -202,14 +237,18 @@
   }
 
   &:focus,
-  &:active  {
+  &:active {
     background-color: $white;
     color: $action-standard;
   }
 
-  &:focus  {
+  &:focus {
     text-decoration: underline;
-    outline-color: $link-outline;
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      outline-color: $link-outline;
+    }
   }
 }
 
@@ -224,7 +263,7 @@
   width: 24px;
   height: 24px;
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     width: 22px;
     height: 22px;
   }
@@ -236,20 +275,27 @@
   outline-style: auto;
 
   @include body-s;
-  @include proxima-nova-bold;
 
-  position: relative;
+  // stylelint-disable-next-line no-duplicate-selectors
+  & {
+    @include proxima-nova-bold;
+  }
 
-  display: block;
-  text-align: center;
+  // stylelint-disable-next-line no-duplicate-selectors
+  & {
+    position: relative;
 
-  color: $action-standard;
-  background-color: transparent;
+    display: block;
+    text-align: center;
 
-  border: 2px solid $action-standard;
-  border-radius: 4px;
+    color: $action-standard;
+    background-color: transparent;
 
-  padding: 8px 16px;
+    border: 2px solid $action-standard;
+    border-radius: 4px;
+
+    padding: 8px 16px;
+  }
 
   &.disabled {
     background-color: $action-disabled;
@@ -257,16 +303,26 @@
     border: 2px solid $action-disabled;
   }
 
-  span { display: block; }
+  span {
+    display: block;
+  }
 
   &:link {
     text-decoration: none;
-    color: $action-standard;
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      color: $action-standard;
+    }
   }
 
   &:hover {
     text-decoration: underline;
-    color: $action-standard;
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      color: $action-standard;
+    }
   }
 
   &:visited {
@@ -274,14 +330,18 @@
   }
 
   &:focus,
-  &:active  {
+  &:active {
     background-color: $action-standard;
     color: $white;
   }
 
-  &:focus  {
+  &:focus {
     text-decoration: underline;
-    outline-color: $link-outline;
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      outline-color: $link-outline;
+    }
   }
 }
 
@@ -317,11 +377,18 @@
   }
 }
 
-%button-primary { @include button-primary; }
+%button-primary {
+  @include button-primary;
+}
 
-%button-secondary { @include button-secondary; }
+%button-secondary {
+  @include button-secondary;
+}
 
-%anchor-primary { @include anchor-primary; }
+%anchor-primary {
+  @include anchor-primary;
+}
 
-%anchor-secondary { @include anchor-secondary; }
-
+%anchor-secondary {
+  @include anchor-secondary;
+}

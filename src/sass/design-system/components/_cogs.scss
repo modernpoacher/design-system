@@ -19,25 +19,41 @@
 
   line-height: 1.375rem;
 
-  &.radio { @include cog-radio; }
+  &.radio {
+    @include cog-radio;
+  }
 
-  &.checkbox { @include cog-checkbox; }
+  &.checkbox {
+    @include cog-checkbox;
+  }
 
-  &.error { @include cog-error; }
+  &.error {
+    @include cog-error;
+  }
 
   .description {
     @include secondary-text;
-    display: block;
-    padding: 0;
-    margin: 0 0 .25rem 0;
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      display: block;
+      padding: 0;
+      margin: 0 0 0.25rem 0;
+    }
   }
 
   .error-message {
     @include error-standard;
-    display: block;
-    padding: 0;
-    margin: 0 0 .25rem 0;
+
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
+      display: block;
+      padding: 0;
+      margin: 0 0 0.25rem 0;
+    }
   }
 }
 
-%cogs { @include cogs; }
+%cogs {
+  @include cogs;
+}

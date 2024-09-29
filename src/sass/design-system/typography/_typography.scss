@@ -9,7 +9,7 @@
   font-size: 3.5rem; // (56px from 16px base)
   line-height: 3.75rem; // + 8
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 2.5rem; // (40px from 16px base)
     line-height: 3rem; // + 8
   }
@@ -22,7 +22,7 @@
   font-size: 2.75rem; // (44px from 16px base)
   line-height: 3.25rem; // + 8
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 2rem; // (32px from 16px base)
     line-height: 2.5rem; // + 8
   }
@@ -35,7 +35,7 @@
   font-size: 2rem; // (32px from 16px base)
   line-height: 2.5rem; // + 8
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 1.5rem; // (24px from 16px base)
     line-height: 2rem; // + 8
   }
@@ -48,7 +48,7 @@
   font-size: 1.625rem; // (26px from 16px base)
   line-height: 2.125rem; // + 8
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 1.25rem; // (20px from 16px base)
     line-height: 1.75rem; // + 8
   }
@@ -61,7 +61,7 @@
   font-size: 1.25rem; // (20px from 16px base)
   line-height: 1.75rem; // + 8
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 1rem; // (16px from 16px base)
     line-height: 1.375rem; // + 6
   }
@@ -74,7 +74,7 @@
   font-size: 0.875rem; // (14px from 16px base)
   line-height: 1.25rem; // + 6
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 0.75rem; // (12px from 16px base)
     line-height: 1.125rem; // + 6
   }
@@ -87,23 +87,35 @@
   font-size: 1rem; // (16px from 16px base)
   line-height: 1.375rem; // + 6
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 0.875rem; // (14px from 16px base)
     line-height: 1.25rem; // + 6
   }
 }
 
-%heading-xxl { @include heading-xxl; }
+%heading-xxl {
+  @include heading-xxl;
+}
 
-%heading-xl { @include heading-xl; }
+%heading-xl {
+  @include heading-xl;
+}
 
-%heading-l { @include heading-l; }
+%heading-l {
+  @include heading-l;
+}
 
-%heading-m { @include heading-m; }
+%heading-m {
+  @include heading-m;
+}
 
-%heading-s { @include heading-s; }
+%heading-s {
+  @include heading-s;
+}
 
-%heading-xs { @include heading-xs; }
+%heading-xs {
+  @include heading-xs;
+}
 
 @mixin body-xl {
   @include proxima-nova-regular;
@@ -112,7 +124,7 @@
   font-size: 2rem; // (32px from 16px base)
   line-height: 2.5rem; // + 8
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 1.5rem; // (24px from 16px base)
     line-height: 2rem; // + 8
   }
@@ -125,7 +137,7 @@
   font-size: 1.5rem; // (24px from 16px base)
   line-height: 2rem; // + 8
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 1.125rem; // (18px from 16px base)
     line-height: 1.5rem; // + 6
   }
@@ -138,7 +150,7 @@
   font-size: 1.25rem; // (20px from 16px base)
   line-height: 1.75rem; // + 8
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 1rem; // (16px from 16px base)
     line-height: 1.375rem; // + 6
   }
@@ -151,7 +163,7 @@
   font-size: 1rem; // (16px from 16px base)
   line-height: 1.375rem; // + 6
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 0.875rem; // (14px from 16px base)
     line-height: 1.25rem; // + 6
   }
@@ -164,29 +176,47 @@
   font-size: 0.875rem; // (14px from 16px base)
   line-height: 1.25rem; // + 6
 
-  @include breakpoint (mobile) {
+  @include breakpoint(mobile) {
     font-size: 0.75rem; // (12px from 16px base)
     line-height: 1.125rem; // + 6
   }
 }
 
-%body-xl { @include body-xl; }
+%body-xl {
+  @include body-xl;
+}
 
-%body-l { @include body-l; }
+%body-l {
+  @include body-l;
+}
 
-%body-m { @include body-m; }
+%body-m {
+  @include body-m;
+}
 
-%body-s { @include body-s; }
+%body-s {
+  @include body-s;
+}
 
-%body-xs { @include body-xs; }
+%body-xs {
+  @include body-xs;
+}
 
-@mixin paragraph { @include body-m; }
-%paragraph { @include paragraph; }
+@mixin paragraph {
+  @include body-m;
+}
+%paragraph {
+  @include paragraph;
+}
 
 @mixin anchor {
   @include proxima-nova-regular;
-  text-decoration: underline;
-  color: $link; // #4D90FE;
+
+  & {
+    // stylelint-disable-line no-duplicate-selectors
+    text-decoration: underline;
+    color: $link; // #4D90FE;
+  }
 
   &:link {
     text-decoration: underline;
@@ -202,41 +232,73 @@
   }
 
   &:focus,
-  &:active  {
+  &:active {
     outline: 2px solid transparent;
     background-color: $link-background; // #FFDD00;
     color: $standard-text; // #171819;
   }
 }
 
-%anchor { @include anchor; }
+%anchor {
+  @include anchor;
+}
 
-@mixin standard-text { @include body-m; }
-%standard-text { @include standard-text; }
+@mixin standard-text {
+  @include body-m;
+}
+%standard-text {
+  @include standard-text;
+}
 
 @mixin primary-text {
   @include body-m;
-  color: $primary-text;
+
+  & {
+    // stylelint-disable-line no-duplicate-selectors
+    color: $primary-text;
+  }
 }
-%primary-text { @include primary-text; }
+%primary-text {
+  @include primary-text;
+}
 
 @mixin secondary-text {
   @include body-m;
-  color: $secondary-text;
+
+  & {
+    // stylelint-disable-line no-duplicate-selectors
+    color: $secondary-text;
+  }
 }
-%secondary-text { @include secondary-text; }
+%secondary-text {
+  @include secondary-text;
+}
 
 @mixin error-standard {
   @include body-m;
-  color: $error-standard;
+
+  & {
+    // stylelint-disable-line no-duplicate-selectors
+    color: $error-standard;
+  }
 }
-%error-standard { @include error-standard; }
+%error-standard {
+  @include error-standard;
+}
 
-@mixin list { @include body-m; }
-@mixin list-item { @include body-m; }
+@mixin list {
+  @include body-m;
+}
+@mixin list-item {
+  @include body-m;
+}
 
-%list { @include list-item; }
-%list-item { @include list-item; }
+%list {
+  @include list-item;
+}
+%list-item {
+  @include list-item;
+}
 
 h1,
 .heading-l {

@@ -1,3 +1,4 @@
 @function rgb-str($r, $g, $b, $a) {
-  @return unquote(to-lower-case("rgba(#{$r}, #{$g}, #{$b}, #{$a})")); // stylelint-disable-line scss/no-global-function-names
+  // stylelint-disable-next-line scss/no-global-function-names
+  @return unquote(to-lower-case("rgba(#{$r}, #{$g}, #{$b}, #{$a})"));
 }

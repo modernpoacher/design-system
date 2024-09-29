@@ -19,21 +19,35 @@
 
   line-height: 1.375rem;
 
-  &.radio { @include gremlin-radio;}
+  &.radio {
+    @include gremlin-radio;
+  }
 
-  &.checkbox { @include gremlin-checkbox; }
+  &.checkbox {
+    @include gremlin-checkbox;
+  }
 
-  &.error { @include gremlin-error; }
+  &.error {
+    @include gremlin-error;
+  }
 
   &.fieldset {
     legend {
       @include heading-m;
-      padding: 0;
-      margin-top: 0
+
+      // stylelint-disable-next-line no-duplicate-selectors
+      & {
+        padding: 0;
+        margin-top: 0;
+      }
     }
 
-    &.error { @include gremlin-error; }
+    &.error {
+      @include gremlin-error;
+    }
   }
 }
 
-%gremlins { @include gremlins; }
+%gremlins {
+  @include gremlins;
+}

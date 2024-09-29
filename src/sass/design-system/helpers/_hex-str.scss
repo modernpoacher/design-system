@@ -1,3 +1,4 @@
 @function hex-str($value) {
-  @return unquote(to-lower-case("##{$value}")); // stylelint-disable-line scss/no-global-function-names
+  // stylelint-disable-next-line scss/no-global-function-names
+  @return unquote(to-lower-case("##{$value}"));
 }

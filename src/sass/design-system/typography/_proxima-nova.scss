@@ -58,22 +58,42 @@
   font-style: italic;
 }
 
-%proxima-nova-extrabold { @include proxima-nova-extrabold; }
+%proxima-nova-extrabold {
+  @include proxima-nova-extrabold;
+}
 
-%proxima-nova-extrabold-italic { @include proxima-nova-extrabold-italic; }
+%proxima-nova-extrabold-italic {
+  @include proxima-nova-extrabold-italic;
+}
 
-%proxima-nova-bold { @include proxima-nova-bold; }
+%proxima-nova-bold {
+  @include proxima-nova-bold;
+}
 
-%proxima-nova-bold-italic { @include proxima-nova-bold-italic; }
+%proxima-nova-bold-italic {
+  @include proxima-nova-bold-italic;
+}
 
-%proxima-nova-regular { @include proxima-nova-regular; }
+%proxima-nova-regular {
+  @include proxima-nova-regular;
+}
 
-%proxima-nova-regular-italic { @include proxima-nova-regular-italic; }
+%proxima-nova-regular-italic {
+  @include proxima-nova-regular-italic;
+}
 
-%proxima-nova-cond-regular { @include proxima-nova-cond-regular; }
+%proxima-nova-cond-regular {
+  @include proxima-nova-cond-regular;
+}
 
-%proxima-nova-cond-regular-italic { @include proxima-nova-cond-regular-italic; }
+%proxima-nova-cond-regular-italic {
+  @include proxima-nova-cond-regular-italic;
+}
 
-%proxima-nova-cond-bold { @include proxima-nova-cond-bold; }
+%proxima-nova-cond-bold {
+  @include proxima-nova-cond-bold;
+}
 
-%proxima-nova-cond-bold-italic { @include proxima-nova-cond-bold-italic; }
+%proxima-nova-cond-bold-italic {
+  @include proxima-nova-cond-bold-italic;
+}
