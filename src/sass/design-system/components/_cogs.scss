@@ -1,9 +1,9 @@
-@import "design-system/palette";
-@import "design-system/typography";
+@use "../palette";
+@use "../typography";
 
-@import "./cogs/radio";
-@import "./cogs/checkbox";
-@import "./cogs/error";
+@use "cogs/radio";
+@use "cogs/checkbox";
+@use "cogs/error";
 
 @mixin cogs {
   padding: 0;
@@ -20,19 +20,19 @@
   line-height: 1.375rem;
 
   &.radio {
-    @include cog-radio;
+    @include radio.cog-radio;
   }
 
   &.checkbox {
-    @include cog-checkbox;
+    @include checkbox.cog-checkbox;
   }
 
   &.error {
-    @include cog-error;
+    @include error.cog-error;
   }
 
   .description {
-    @include secondary-text;
+    @include typography.secondary-text;
 
     // stylelint-disable-next-line no-duplicate-selectors
     & {
@@ -43,7 +43,7 @@
   }
 
   .error-message {
-    @include error-standard;
+    @include typography.error-standard;
 
     // stylelint-disable-next-line no-duplicate-selectors
     & {

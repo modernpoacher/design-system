@@ -1,26 +1,26 @@
-@import "design-system/palette";
-@import "design-system/typography";
+@use "../palette";
+@use "../typography";
 
-@import "design-system/components/gremlins";
-@import "design-system/components/sprockets";
-@import "design-system/components/cogs";
-@import "design-system/components/gears";
+@use "../components/gremlins";
+@use "../components/sprockets";
+@use "../components/cogs";
+@use "../components/gears";
 
 html,
 body {
   text-size-adjust: 100%;
 
-  @include proxima-nova-regular;
+  @include proxima-nova.proxima-nova-regular;
 
   // stylelint-disable-next-line no-duplicate-selectors
   & {
-    color: $standard-text;
+    color: palette.$standard-text;
 
     margin: 0;
     padding: 0;
     border: none;
 
-    background-color: $white;
+    background-color: palette.$white;
 
     width: 100%;
     height: 100%;
@@ -62,15 +62,15 @@ main {
   }
 
   header h1 {
-    @include heading-xxl;
+    @include typography.heading-xxl;
   }
 
   button {
-    @include button-primary-action;
+    @include actions.button-primary-action;
   }
 
   label {
-    @include standard-text;
+    @include typography.standard-text;
 
     // stylelint-disable-next-line no-duplicate-selectors
     & {
@@ -86,7 +86,7 @@ main {
     padding: 0;
     border: none;
     legend {
-      @include heading-m;
+      @include typography.heading-m;
 
       // stylelint-disable-next-line no-duplicate-selectors
       & {
@@ -100,35 +100,35 @@ main {
   input:not([type="checkbox"]):not([type="radio"]),
   select,
   textarea {
-    @include standard-text;
+    @include typography.standard-text;
 
     // stylelint-disable-next-line no-duplicate-selectors
     & {
-      background-color: $white;
-      border: 2px solid $black;
+      background-color: palette.$white;
+      border: 2px solid palette.$black;
       display: inline-block;
       padding: 0.25rem;
       line-height: 2rem;
     }
 
     &:focus {
-      outline: 3px solid $outline;
+      outline: 3px solid palette.$outline;
       outline-offset: 0;
       box-shadow: inset 0 0 0 2px;
-      border-color: $black;
+      border-color: palette.$black;
     }
   }
 
   .gremlin {
-    @include gremlins;
+    @include gremlins.gremlins;
   }
 
   .sprocket {
-    @include sprockets;
+    @include sprockets.sprockets;
   }
 
   .cog {
-    @include cogs;
+    @include cogs.cogs;
   }
 
   .sprocket .cog:last-of-type {
@@ -136,7 +136,7 @@ main {
   }
 
   > .sprocket.fieldset > fieldset > legend {
-    @include heading-l;
+    @include typography.heading-l;
 
     // stylelint-disable-next-line no-duplicate-selectors
     & {

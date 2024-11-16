@@ -1,4 +1,4 @@
-@import "design-system/typography/actions";
+@use "../typography/actions";
 
 @mixin gears {
   padding: 0;
@@ -9,7 +9,7 @@
     margin-right: 0.5rem;
 
     a {
-      @include anchor-secondary-action;
+      @include actions.anchor-secondary-action;
 
       // stylelint-disable-next-line no-duplicate-selectors
       & {

@@ -1,4 +1,5 @@
+@use "sass:string";
+
 @function hex-str($value) {
-  // stylelint-disable-next-line scss/no-global-function-names
-  @return unquote(to-lower-case("##{$value}"));
+  @return string.unquote(string.to-lower-case("##{$value}"));
 }

@@ -1,5 +1,5 @@
-@import "design-system/layouts/furniture/skip-link";
-@import "design-system/layouts/furniture/header";
-@import "design-system/layouts/furniture/footer";
+@use "layouts/furniture/skip-link";
+@use "layouts/furniture/header";
+@use "layouts/furniture/footer";
 
-@import "design-system/layouts/layout";
+@use "layouts/layout";

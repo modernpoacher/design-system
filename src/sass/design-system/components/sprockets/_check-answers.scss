@@ -1,6 +1,6 @@
-@import "design-system/palette";
-@import "design-system/typography";
-@import "design-system/helpers/invisible";
+@use "../../palette";
+@use "../../typography";
+@use "../../helpers/invisible";
 
 @mixin sprocket-check-answers {
   & > h2:first-child {
@@ -20,11 +20,11 @@
     dd {
       display: table-cell;
       padding: .25rem 0;
-      border-bottom: 2px solid $grey-1;
+      border-bottom: 2px solid palette.$grey-1;
     }
 
     .answer-title {
-      @include heading-s;
+      @include typography.heading-s;
 
       & { // stylelint-disable-line no-duplicate-selectors
         width: 30%;
@@ -42,7 +42,7 @@
       text-align: right;
 
       .visually-hidden-text {
-        @include invisible;
+        @include invisible.invisible;
       }
     }
   }

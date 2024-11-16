@@ -1,9 +1,9 @@
-@import "design-system/palette";
-@import "design-system/typography";
+@use "../palette";
+@use "../typography";
 
-@import "./sprockets/error-summary";
-@import "./sprockets/check-answers";
-@import "./sprockets/error";
+@use "sprockets/error-summary";
+@use "sprockets/check-answers";
+@use "sprockets/error";
 
 @mixin sprockets {
   padding: 0;
@@ -20,16 +20,16 @@
   line-height: 1.375rem;
 
   &.error-summary {
-    @include sprocket-error-summary;
+    @include error-summary.sprocket-error-summary;
   }
 
   &.check-answers {
-    @include sprocket-check-answers;
+    @include check-answers.sprocket-check-answers;
   }
 
   &.fieldset {
     legend {
-      @include heading-m;
+      @include typography.heading-m;
 
       // stylelint-disable-next-line no-duplicate-selectors
       & {
@@ -39,11 +39,11 @@
     }
 
     &.error {
-      @include sprocket-error;
+      @include error.sprocket-error;
     }
 
     .description {
-      @include secondary-text;
+      @include typography.secondary-text;
 
       // stylelint-disable-next-line no-duplicate-selectors
       & {
@@ -54,7 +54,7 @@
     }
 
     .error-message {
-      @include error-standard;
+      @include typography.error-standard;
 
       // stylelint-disable-next-line no-duplicate-selectors
       & {

@@ -1,4 +1,5 @@
-@import "design-system/palette";
+@use "../../palette";
+@use "../../typography";
 
 .skip-link {
   @extend %anchor;
@@ -30,8 +31,8 @@
   }
 
   &:active {
-    outline: 3px solid $white;
-    background-color: $layout-edge;
-    color: $white;
+    outline: 3px solid palette.$white;
+    background-color: palette.$layout-edge;
+    color: palette.$white;
   }
 }

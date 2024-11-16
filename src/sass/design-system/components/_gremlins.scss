@@ -1,9 +1,9 @@
-@import "design-system/palette";
-@import "design-system/typography";
+@use "../palette";
+@use "../typography";
 
-@import "./gremlins/radio";
-@import "./gremlins/checkbox";
-@import "./gremlins/error";
+@use "gremlins/radio";
+@use "gremlins/checkbox";
+@use "gremlins/error";
 
 @mixin gremlins {
   padding: 0;
@@ -20,20 +20,20 @@
   line-height: 1.375rem;
 
   &.radio {
-    @include gremlin-radio;
+    @include radio.gremlin-radio;
   }
 
   &.checkbox {
-    @include gremlin-checkbox;
+    @include checkbox.gremlin-checkbox;
   }
 
   &.error {
-    @include gremlin-error;
+    @include error.gremlin-error;
   }
 
   &.fieldset {
     legend {
-      @include heading-m;
+      @include typography.heading-m;
 
       // stylelint-disable-next-line no-duplicate-selectors
       & {
@@ -43,7 +43,7 @@
     }
 
     &.error {
-      @include gremlin-error;
+      @include error.gremlin-error;
     }
   }
 }

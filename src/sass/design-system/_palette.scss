@@ -1,61 +1,61 @@
-@import "design-system/helpers/hex-str";
-@import "design-system/helpers/rgb-str";
+@use "helpers/hex-str";
+@use "helpers/rgb-str";
 
-$grey-1: hex-str(map(palette, grey-1, hex));
-$grey-2: hex-str(map(palette, grey-2, hex));
-$grey-3: hex-str(map(palette, grey-3, hex));
+$grey-1: hex-str.hex-str(map(palette, grey-1, hex));
+$grey-2: hex-str.hex-str(map(palette, grey-2, hex));
+$grey-3: hex-str.hex-str(map(palette, grey-3, hex));
 
-$black: hex-str(map(palette, black, hex));
-$white: hex-str(map(palette, white, hex));
+$black: hex-str.hex-str(map(palette, black, hex));
+$white: hex-str.hex-str(map(palette, white, hex));
 
-$outline: hex-str(map(palette, outline, hex));
+$outline: hex-str.hex-str(map(palette, outline, hex));
 
-$pending-standard: hex-str(map(palette, pending, standard, hex));
+$pending-standard: hex-str.hex-str(map(palette, pending, standard, hex));
 
-$resolved-standard: hex-str(map(palette, resolved, standard, hex));
-$resolved-triple-a: hex-str(map(palette, resolved, triple-a, hex));
-$resolved-double-a: hex-str(map(palette, resolved, double-a, hex));
-$resolved-single-a: hex-str(map(palette, resolved, single-a, hex));
-$resolved-foreground: hex-str(map(palette, resolved, foreground, hex));
-$resolved-edge: hex-str(map(palette, resolved, edge, hex));
-$resolved-background: hex-str(map(palette, resolved, background, hex));
+$resolved-standard: hex-str.hex-str(map(palette, resolved, standard, hex));
+$resolved-triple-a: hex-str.hex-str(map(palette, resolved, triple-a, hex));
+$resolved-double-a: hex-str.hex-str(map(palette, resolved, double-a, hex));
+$resolved-single-a: hex-str.hex-str(map(palette, resolved, single-a, hex));
+$resolved-foreground: hex-str.hex-str(map(palette, resolved, foreground, hex));
+$resolved-edge: hex-str.hex-str(map(palette, resolved, edge, hex));
+$resolved-background: hex-str.hex-str(map(palette, resolved, background, hex));
 
-$rejected-standard: hex-str(map(palette, rejected, standard, hex));
-$rejected-triple-a: hex-str(map(palette, rejected, triple-a, hex));
-$rejected-double-a: hex-str(map(palette, rejected, double-a, hex));
-$rejected-single-a: hex-str(map(palette, rejected, single-a, hex));
-$rejected-foreground: hex-str(map(palette, rejected, foreground, hex));
-$rejected-edge: hex-str(map(palette, rejected, edge, hex));
-$rejected-background: hex-str(map(palette, rejected, background, hex));
+$rejected-standard: hex-str.hex-str(map(palette, rejected, standard, hex));
+$rejected-triple-a: hex-str.hex-str(map(palette, rejected, triple-a, hex));
+$rejected-double-a: hex-str.hex-str(map(palette, rejected, double-a, hex));
+$rejected-single-a: hex-str.hex-str(map(palette, rejected, single-a, hex));
+$rejected-foreground: hex-str.hex-str(map(palette, rejected, foreground, hex));
+$rejected-edge: hex-str.hex-str(map(palette, rejected, edge, hex));
+$rejected-background: hex-str.hex-str(map(palette, rejected, background, hex));
 
-$layout-background: hex-str(map(palette, layout, background, hex));
-$layout-edge: hex-str(map(palette, layout, edge, hex));
-$layout-foreground: hex-str(map(palette, layout, foreground, hex));
+$layout-background: hex-str.hex-str(map(palette, layout, background, hex));
+$layout-edge: hex-str.hex-str(map(palette, layout, edge, hex));
+$layout-foreground: hex-str.hex-str(map(palette, layout, foreground, hex));
 
-$action-standard: hex-str(map(palette, action, standard, hex));
-$action-disabled: hex-str(map(palette, action, disabled, hex));
-$action-triple-a: hex-str(map(palette, action, triple-a, hex));
-$action-double-a: hex-str(map(palette, action, double-a, hex));
-$action-single-a: hex-str(map(palette, action, single-a, hex));
-$action-foreground: hex-str(map(palette, action, foreground, hex));
-$action-edge: hex-str(map(palette, action, edge, hex));
-$action-background: hex-str(map(palette, action, background, hex));
+$action-standard: hex-str.hex-str(map(palette, action, standard, hex));
+$action-disabled: hex-str.hex-str(map(palette, action, disabled, hex));
+$action-triple-a: hex-str.hex-str(map(palette, action, triple-a, hex));
+$action-double-a: hex-str.hex-str(map(palette, action, double-a, hex));
+$action-single-a: hex-str.hex-str(map(palette, action, single-a, hex));
+$action-foreground: hex-str.hex-str(map(palette, action, foreground, hex));
+$action-edge: hex-str.hex-str(map(palette, action, edge, hex));
+$action-background: hex-str.hex-str(map(palette, action, background, hex));
 
-$error-standard: hex-str(map(palette, error, standard, hex));
-$error-triple-a: hex-str(map(palette, error, triple-a, hex));
-$error-double-a: hex-str(map(palette, error, double-a, hex));
-$error-single-a: hex-str(map(palette, error, single-a, hex));
-$error-foreground: hex-str(map(palette, error, foreground, hex));
-$error-edge: hex-str(map(palette, error, edge, hex));
-$error-background: hex-str(map(palette, error, background, hex));
+$error-standard: hex-str.hex-str(map(palette, error, standard, hex));
+$error-triple-a: hex-str.hex-str(map(palette, error, triple-a, hex));
+$error-double-a: hex-str.hex-str(map(palette, error, double-a, hex));
+$error-single-a: hex-str.hex-str(map(palette, error, single-a, hex));
+$error-foreground: hex-str.hex-str(map(palette, error, foreground, hex));
+$error-edge: hex-str.hex-str(map(palette, error, edge, hex));
+$error-background: hex-str.hex-str(map(palette, error, background, hex));
 
-$standard-text: hex-str(map(palette, standard-text, hex));
-$primary-text: hex-str(map(palette, primary-text, hex));
-$secondary-text: hex-str(map(palette, secondary-text, hex));
+$standard-text: hex-str.hex-str(map(palette, standard-text, hex));
+$primary-text: hex-str.hex-str(map(palette, primary-text, hex));
+$secondary-text: hex-str.hex-str(map(palette, secondary-text, hex));
 
-$link: hex-str(map(palette, link, hex));
-$link-hover: hex-str(map(palette, link-hover, hex));
-$link-visited: hex-str(map(palette, link-visited, hex));
-$link-focus: hex-str(map(palette, link-focus, hex));
-$link-background: hex-str(map(palette, link-background, hex));
-$link-outline: hex-str(map(palette, link-outline, hex));
+$link: hex-str.hex-str(map(palette, link, hex));
+$link-hover: hex-str.hex-str(map(palette, link-hover, hex));
+$link-visited: hex-str.hex-str(map(palette, link-visited, hex));
+$link-focus: hex-str.hex-str(map(palette, link-focus, hex));
+$link-background: hex-str.hex-str(map(palette, link-background, hex));
+$link-outline: hex-str.hex-str(map(palette, link-outline, hex));

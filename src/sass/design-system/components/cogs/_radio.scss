@@ -1,3 +1,7 @@
+@use "../../helpers/breakpoints";
+@use "../../palette";
+@use "../../typography";
+
 @mixin cog-radio {
   position: relative;
   padding-left: 3rem;
@@ -9,15 +13,15 @@
   }
 
   label {
-    @include breakpoint(mobile) {
+    @include breakpoints.breakpoint(mobile) {
       padding-top: 0.375rem;
     }
 
-    @include breakpoint(large-mobile) {
+    @include breakpoints.breakpoint(large-mobile) {
       padding-top: 0.375rem;
     }
 
-    @include breakpoint(small-mobile) {
+    @include breakpoints.breakpoint(small-mobile) {
       padding-top: 0.375rem;
     }
   }
@@ -33,7 +37,7 @@
     border: 2px solid currentColor;
     border-radius: 50%;
     content: "\200b";
-    background-color: $white;
+    background-color: palette.$white;
   }
 
   input {
@@ -42,7 +46,7 @@
     top: .5rem;
 
     &:focus + label:before {
-      box-shadow: 0 0 0 2px $outline;
+      box-shadow: 0 0 0 2px palette.$outline;
     }
 
     &:checked + label:after {
@@ -58,7 +62,7 @@
       border: 2px solid currentColor;
       border-radius: 50%;
       content: "\200b";
-      background-color: $black;
+      background-color: palette.$black;
     }
   }
 }

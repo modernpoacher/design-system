@@ -1,10 +1,10 @@
-@import "design-system/palette";
-@import "design-system/typography";
-@import "design-system/helpers/invisible";
+@use "../../palette";
+@use "../../typography";
+@use "../../helpers/invisible";
 
 @mixin sprocket-error-summary {
-  background-color: $white;
-  border: .25rem solid $error-standard;
+  background-color: palette.$white;
+  border: .25rem solid palette.$error-standard;
   display: block;
   padding: 1rem;
   line-height: 2rem;
@@ -20,7 +20,7 @@
   }
 
   li {
-    @include error-standard;
+    @include typography.error-standard;
 
     & { // stylelint-disable-line no-duplicate-selectors
       display: block;
@@ -30,22 +30,22 @@
   }
 
   a {
-    @include error-standard;
+    @include typography.error-standard;
 
     &:focus {
       outline: 3px solid transparent;
       text-decoration: none;
       outline-offset: 0;
-      box-shadow: 0 -2px $outline, 0 4px $black;
-      color: $standard-text;
-      background-color: $outline;
+      box-shadow: 0 -2px palette.$outline, 0 4px palette.$black;
+      color: palette.$standard-text;
+      background-color: palette.$outline;
     }
   }
 
   &:focus {
-    outline: 3px solid $outline;
+    outline: 3px solid palette.$outline;
     outline-offset: 0;
-    border-color: $black;
+    border-color: palette.$black;
   }
 }
 

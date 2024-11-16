@@ -1,4 +1,4 @@
-@import "design-system/helpers/breakpoints";
+@use "helpers/breakpoints";
 
-@import "design-system/typography/typography";
-@import "design-system/typography/actions";
+@use "typography/headings";
+@use "typography/actions";
