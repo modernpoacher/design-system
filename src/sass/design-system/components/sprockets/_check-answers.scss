@@ -1,6 +1,7 @@
+@use "../../helpers/invisible";
+
 @use "../../palette";
 @use "../../typography";
-@use "../../helpers/invisible";
 
 @mixin sprocket-check-answers {
   & > h2:first-child {

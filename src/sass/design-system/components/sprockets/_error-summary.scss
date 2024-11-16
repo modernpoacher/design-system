@@ -1,6 +1,7 @@
+@use "../../helpers/invisible";
+
 @use "../../palette";
 @use "../../typography";
-@use "../../helpers/invisible";
 
 @mixin sprocket-error-summary {
   background-color: palette.$white;
@@ -37,7 +38,7 @@
       text-decoration: none;
       outline-offset: 0;
       box-shadow: 0 -2px palette.$outline, 0 4px palette.$black;
-      color: palette.$standard-text;
+      color: palette.$standard;
       background-color: palette.$outline;
     }
   }

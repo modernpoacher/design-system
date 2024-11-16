@@ -1,4 +1,5 @@
-@use "helpers/breakpoints";
+@forward "helpers/breakpoints";
 
-@use "typography/headings";
-@use "typography/actions";
+@forward "typography/text";
+@forward "typography/actions";
+

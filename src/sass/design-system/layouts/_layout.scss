@@ -1,5 +1,7 @@
 @use "../palette";
-@use "../typography";
+@use "../typography/text";
+@use "../typography/actions";
+@use "../typography/proxima-nova";
 
 @use "../components/gremlins";
 @use "../components/sprockets";
@@ -14,7 +16,7 @@ body {
 
   // stylelint-disable-next-line no-duplicate-selectors
   & {
-    color: palette.$standard-text;
+    color: palette.$standard;
 
     margin: 0;
     padding: 0;
@@ -62,7 +64,7 @@ main {
   }
 
   header h1 {
-    @include typography.heading-xxl;
+    @include text.heading-xxl;
   }
 
   button {
@@ -70,7 +72,7 @@ main {
   }
 
   label {
-    @include typography.standard-text;
+    @include text.standard-text;
 
     // stylelint-disable-next-line no-duplicate-selectors
     & {
@@ -86,7 +88,7 @@ main {
     padding: 0;
     border: none;
     legend {
-      @include typography.heading-m;
+      @include text.heading-m;
 
       // stylelint-disable-next-line no-duplicate-selectors
       & {
@@ -100,7 +102,7 @@ main {
   input:not([type="checkbox"]):not([type="radio"]),
   select,
   textarea {
-    @include typography.standard-text;
+    @include text.standard-text;
 
     // stylelint-disable-next-line no-duplicate-selectors
     & {
@@ -136,7 +138,7 @@ main {
   }
 
   > .sprocket.fieldset > fieldset > legend {
-    @include typography.heading-l;
+    @include text.heading-l;
 
     // stylelint-disable-next-line no-duplicate-selectors
     & {

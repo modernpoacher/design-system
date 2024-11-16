@@ -205,13 +205,13 @@
       "description": "Background"
     }
   },
-  "standard-text": {
+  "standard": {
     "hex": "171819"
   },
-  "primary-text": {
+  "primary": {
     "hex": "171819"
   },
-  "secondary-text": {
+  "secondary": {
     "hex": "626A6E"
   },
   "link": {

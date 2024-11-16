@@ -1,15 +1,15 @@
 @use "../helpers/breakpoints";
 
 @use "../palette";
-@use "../typography";
 
+@use "text";
 @use "proxima-nova";
 
 @mixin button-standard {
   display: inline-block;
   margin: 32px auto 0 0;
 
-  @include typography.body-s;
+  @include text.body-s;
 
   @include breakpoints.breakpoint(mobile) {
     margin-top: 24px;
@@ -20,7 +20,7 @@
   display: inline-block;
   margin: 32px auto 0 0;
 
-  @include typography.body-s;
+  @include text.body-s;
 
   @include breakpoints.breakpoint(mobile) {
     margin-top: 24px;
@@ -47,7 +47,7 @@
 @mixin button-primary-action {
   outline-offset: 2px;
 
-  @include typography.body-s;
+  @include text.body-s;
 
   // stylelint-disable-next-line no-duplicate-selectors
   & {
@@ -85,13 +85,13 @@
   }
 
   &:focus {
-    color: palette.$standard-text;
+    color: palette.$standard;
     background-color: palette.$outline;
 
     border: 2px solid palette.$outline;
 
     text-decoration: underline;
-    outline-color: palette.$standard-text;
+    outline-color: palette.$standard;
   }
 }
 
@@ -115,7 +115,7 @@
 @mixin button-secondary-action {
   outline-offset: 2px;
 
-  @include typography.body-s;
+  @include text.body-s;
 
   // stylelint-disable-next-line no-duplicate-selectors
   & {
@@ -184,7 +184,7 @@
   outline-width: 1px;
   outline-style: auto;
 
-  @include typography.body-s;
+  @include text.body-s;
 
   // stylelint-disable-next-line no-duplicate-selectors
   & {
@@ -277,7 +277,7 @@
   outline-width: 1px;
   outline-style: auto;
 
-  @include typography.body-s;
+  @include text.body-s;
 
   // stylelint-disable-next-line no-duplicate-selectors
   & {

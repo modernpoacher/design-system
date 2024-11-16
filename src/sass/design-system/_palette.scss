@@ -49,9 +49,9 @@ $error-foreground: hex-str.hex-str(map(palette, error, foreground, hex));
 $error-edge: hex-str.hex-str(map(palette, error, edge, hex));
 $error-background: hex-str.hex-str(map(palette, error, background, hex));
 
-$standard-text: hex-str.hex-str(map(palette, standard-text, hex));
-$primary-text: hex-str.hex-str(map(palette, primary-text, hex));
-$secondary-text: hex-str.hex-str(map(palette, secondary-text, hex));
+$standard: hex-str.hex-str(map(palette, standard, hex));
+$primary: hex-str.hex-str(map(palette, primary, hex));
+$secondary: hex-str.hex-str(map(palette, secondary, hex));
 
 $link: hex-str.hex-str(map(palette, link, hex));
 $link-hover: hex-str.hex-str(map(palette, link-hover, hex));
