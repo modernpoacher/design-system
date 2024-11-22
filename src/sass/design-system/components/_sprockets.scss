@@ -40,6 +40,8 @@
 
     &.error {
       @include error.sprocket-error;
+
+      padding-left: 1rem;
     }
 
     .description {

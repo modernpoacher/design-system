@@ -44,6 +44,8 @@
 
     &.error {
       @include error.gremlin-error;
+
+      padding-left: 1rem;
     }
   }
 }
