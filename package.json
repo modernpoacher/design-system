@@ -17,7 +17,10 @@
   "engines": {
     "node": ">=18.12.0"
   },
-  "repository": "https://github.com/modernpoacher/design-system.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modernpoacher/design-system.git"
+  },
   "scripts": {
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint src/sass",
