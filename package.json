@@ -34,9 +34,9 @@
     "debug": "^4.4.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.8",
+    "@babel/core": "^7.26.9",
     "@babel/eslint-parser": "^7.26.8",
-    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-env": "^7.26.9",
     "core-js": "^3.40.0",
     "cross-env": "^7.0.3",
     "eslint": "8.57.1",
