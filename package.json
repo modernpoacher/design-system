@@ -43,7 +43,7 @@
     "eslint-config-standard": "^17.1.0",
     "husky": "^9.1.7",
     "prettier": "^3.5.2",
-    "stylelint": "^16.14.1",
+    "stylelint": "^16.15.0",
     "stylelint-config-recommended-scss": "^14.1.0",
     "stylelint-scss": "^6.11.1"
   }
