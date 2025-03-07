@@ -23,6 +23,10 @@
     "hex": "FFDD00",
     "description": "Focus"
   },
+  "disabled": {
+    "hex": "737D82",
+    "description": "Disabled"
+  },
   "layout": {
     "standard": {
       "hex": "F4F5F6",

@@ -3,9 +3,8 @@
 
 @use "cogs/radio";
 @use "cogs/checkbox";
+@use "cogs/disabled";
 @use "cogs/error";
-
-$disabled: #737d82; // #7d878c;
 
 @mixin cogs {
   padding: 0;
@@ -23,56 +22,14 @@ $disabled: #737d82; // #7d878c;
 
   &.radio {
     @include radio.cog-radio;
-
-    &.disabled {
-      input:checked + {
-        label::before,
-        label::after {
-          border-color: $disabled;
-        }
-
-        label::after {
-          background-color: $disabled;
-        }
-      }
-
-      input + {
-        label::before, // stylelint-disable-line no-descending-specificity
-        label::after { // stylelint-disable-line no-descending-specificity
-          border-color: $disabled;
-        }
-      }
-    }
   }
 
   &.checkbox {
     @include checkbox.cog-checkbox;
-
-    &.disabled {
-      input:checked + {
-        label::before {
-          border-color: $disabled;
-        }
-
-        label::after {
-          border-left-color: $disabled;
-          border-bottom-color: $disabled;
-        }
-      }
-
-      input + label::before { // stylelint-disable-line no-descending-specificity
-        border-color: $disabled;
-      }
-    }
   }
 
   &.disabled {
-    input:not([type="checkbox"]):not([type="radio"]),
-    select,
-    textarea {
-      border-color: $disabled;
-      color: $disabled;
-    }
+    @include disabled.cog-disabled;
   }
 
   &.error {

@@ -5,7 +5,7 @@
 
 @mixin sprocket-error-summary {
   background-color: palette.$white;
-  border: .25rem solid palette.$error-standard;
+  border: 0.25rem solid palette.$error-standard;
   display: block;
   padding: 1rem;
   line-height: 2rem;
@@ -23,10 +23,11 @@
   li {
     @include typography.error-standard;
 
-    & { // stylelint-disable-line no-duplicate-selectors
+    // stylelint-disable-next-line no-duplicate-selectors
+    & {
       display: block;
       padding: 0;
-      margin: 0 0 .25rem 0;
+      margin: 0 0 0.25rem 0;
     }
   }
 
@@ -37,7 +38,9 @@
       outline: 3px solid transparent;
       text-decoration: none;
       outline-offset: 0;
-      box-shadow: 0 -2px palette.$outline, 0 4px palette.$black;
+      box-shadow:
+        0 -2px palette.$outline,
+        0 4px palette.$black;
       color: palette.$standard;
       background-color: palette.$outline;
     }
@@ -50,4 +53,6 @@
   }
 }
 
-%sprocket-error-summary { @include sprocket-error-summary; }
+%sprocket-error-summary {
+  @include sprocket-error-summary;
+}

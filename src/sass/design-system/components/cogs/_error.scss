@@ -2,7 +2,7 @@
 @use "../../typography";
 
 @mixin cog-error {
-  border-left: .25rem solid palette.$error-standard;
+  border-left: 0.25rem solid palette.$error-standard;
   padding: 0 1rem;
 
   input:not([type="checkbox"]):not([type="radio"]),
@@ -19,11 +19,13 @@
   &.checkbox {
     padding-left: 4rem;
 
-    input { // stylelint-disable-line no-descending-specificity
+    // stylelint-disable-next-line no-descending-specificity
+    input {
       left: 1.5rem;
     }
 
-    label:before { // stylelint-disable-line no-descending-specificity
+    // stylelint-disable-next-line no-descending-specificity
+    label:before {
       left: 1rem;
 
       border: 2px solid palette.$error-standard;
@@ -43,4 +45,6 @@
   }
 }
 
-%cog-error { @include cog-error; }
+%cog-error {
+  @include cog-error;
+}

@@ -3,7 +3,7 @@
 
 @mixin gremlin-radio {
   position: relative;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   min-height: 2rem;
 
   &:last-of-type {
@@ -26,8 +26,8 @@
 
   input {
     position: absolute;
-    left: .5rem;
-    top: .5rem;
+    left: 0.5rem;
+    top: 0.5rem;
 
     &:focus + label:before {
       box-shadow: 0 0 0 2px palette.$outline;
@@ -36,10 +36,10 @@
     &:checked + label:after {
       box-sizing: border-box;
       position: absolute;
-      top: .5rem;
-      bottom: .5rem;
-      left: .5rem;
-      right: .5rem;
+      top: 0.5rem;
+      bottom: 0.5rem;
+      left: 0.5rem;
+      right: 0.5rem;
       width: 1rem;
       height: 1rem;
       overflow: hidden;
@@ -54,6 +54,29 @@
       padding: 0;
     }
   }
+
+  &.disabled {
+    input + label {
+      &::before,
+      &::after {
+        border-color: palette.$disabled;
+      }
+    }
+
+    input:checked + label {
+      &::before,
+      &::after {
+        border-color: palette.$disabled;
+      }
+
+      // stylelint-disable-line no-descending-specificity
+      &::after {
+        background-color: palette.$disabled;
+      }
+    }
+  }
 }
 
-%gremlin-radio { @include gremlin-radio; }
+%gremlin-radio {
+  @include gremlin-radio;
+}

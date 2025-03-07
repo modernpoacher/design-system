@@ -10,6 +10,8 @@ $white: hex-str.hex-str(map(palette, white, hex));
 
 $outline: hex-str.hex-str(map(palette, outline, hex));
 
+$disabled: hex-str.hex-str(map(palette, disabled, hex));
+
 $pending-standard: hex-str.hex-str(map(palette, pending, standard, hex));
 
 $resolved-standard: hex-str.hex-str(map(palette, resolved, standard, hex));

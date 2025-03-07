@@ -1,5 +1,7 @@
 @use "sass:string";
 
 @function rgb-str($r, $g, $b, $a) {
-  @return string.unquote(string.to-lower-case("rgba(#{$r}, #{$g}, #{$b}, #{$a})"));
+  @return string.unquote(
+    string.to-lower-case("rgba(#{$r}, #{$g}, #{$b}, #{$a})")
+  );
 }
