@@ -3,11 +3,6 @@
 @use "../typography/actions";
 @use "../typography/proxima-nova";
 
-@use "../components/gremlins";
-@use "../components/sprockets";
-@use "../components/cogs";
-@use "../components/gears";
-
 html,
 body {
   text-size-adjust: 100%;
@@ -118,32 +113,6 @@ main {
       outline-offset: 0;
       box-shadow: inset 0 0 0 2px;
       border-color: palette.$black;
-    }
-  }
-
-  .gremlin {
-    @include gremlins.gremlins;
-  }
-
-  .sprocket {
-    @include sprockets.sprockets;
-  }
-
-  .cog {
-    @include cogs.cogs;
-  }
-
-  .sprocket .cog:last-of-type {
-    margin-bottom: 0;
-  }
-
-  > .sprocket.fieldset > fieldset > legend {
-    @include text.heading-l;
-
-    // stylelint-disable-next-line no-duplicate-selectors
-    & {
-      padding: 0;
-      margin: 0 0 1em 0; // EM
     }
   }
 }

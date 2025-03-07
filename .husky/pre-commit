@@ -1,4 +1,5 @@
 #!/bin/sh
 
 npm run lint
-npm reun prettier
+npm run prettier
+git add ./src/sass
