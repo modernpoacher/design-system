@@ -45,19 +45,6 @@ main {
   max-width: 1020px;
   margin: 0 auto;
 
-  > header.alpha,
-  > header.omega,
-  > header.embark,
-  > header.debark,
-  > header.confirm,
-  > div.alpha,
-  > div.omega,
-  > div.embark,
-  > div.debark,
-  > div.confirm {
-    padding: 0 1rem;
-  }
-
   header h1 {
     @include text.heading-xxl;
   }
