@@ -24,7 +24,7 @@
   "scripts": {
     "lint": "stylelint src/sass",
     "lint:fix": "npm run lint -- --fix",
-    "prettier": "prettier src/sass --write"
+    "prettier": "prettier src/sass/**/*.scss --write"
   },
   "devDependencies": {
     "husky": "^9.1.7",
