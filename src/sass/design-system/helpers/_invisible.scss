@@ -10,7 +10,7 @@
   padding: 0;
 
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0); /* stylelint-disable-line property-no-deprecated */
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
 
@@ -30,7 +30,7 @@
   margin: initial;
 
   overflow: initial;
-  clip: initial;
+  clip: initial; /* stylelint-disable-line property-no-deprecated */
   -webkit-clip-path: initial;
   clip-path: initial;
 
@@ -48,7 +48,7 @@
   padding: 0;
 
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0); /* stylelint-disable-line property-no-deprecated */
   -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
 
@@ -65,7 +65,7 @@
   margin: initial;
 
   overflow: initial;
-  clip: initial;
+  clip: initial; /* stylelint-disable-line property-no-deprecated */
   -webkit-clip-path: initial;
   clip-path: initial;
 

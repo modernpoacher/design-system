@@ -12,7 +12,7 @@
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0); /* stylelint-disable-line property-no-deprecated */
   clip-path: inset(50%);
   white-space: nowrap;
   display: block;
@@ -25,7 +25,7 @@
     width: auto;
     height: auto;
     overflow: visible;
-    clip: auto;
+    clip: auto; /* stylelint-disable-line property-no-deprecated */
     clip-path: none;
     margin: 3px;
   }

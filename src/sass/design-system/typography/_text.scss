@@ -214,27 +214,26 @@
 @mixin anchor {
   @include proxima-nova.proxima-nova-regular;
 
-  & {
-    // stylelint-disable-line no-duplicate-selectors
+  & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
     text-decoration: underline;
     color: palette.$link; // #4D90FE;
   }
 
-  &:link {
+  &:link /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     text-decoration: underline;
     color: palette.$link; // #4D90FE;
   }
 
-  &:hover {
+  &:hover /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     color: palette.$link-hover; // #003078;
   }
 
-  &:visited {
+  &:visited /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     color: palette.$link-visited; // #4c2c92;
   }
 
-  &:focus,
-  &:active {
+  &:focus /* stylelint-disable-line nesting-selector-no-missing-scoping-root */,
+  &:active /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     outline: 2px solid transparent;
     background-color: palette.$link-background; // #FFDD00;
     color: palette.$standard; // #171819;
@@ -255,8 +254,7 @@
 @mixin primary-text {
   @include body-m;
 
-  & {
-    // stylelint-disable-line no-duplicate-selectors
+  & /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     color: palette.$primary;
   }
 }
@@ -267,8 +265,7 @@
 @mixin secondary-text {
   @include body-m;
 
-  & {
-    // stylelint-disable-line no-duplicate-selectors
+  & /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     color: palette.$secondary;
   }
 }
@@ -279,8 +276,7 @@
 @mixin error-standard {
   @include body-m;
 
-  & {
-    // stylelint-disable-line no-duplicate-selectors
+  & /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     color: palette.$error-standard;
   }
 }

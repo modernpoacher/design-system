@@ -49,13 +49,11 @@
 
   @include text.body-s;
 
-  // stylelint-disable-next-line no-duplicate-selectors
-  & {
+  & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
     @include proxima-nova.proxima-nova-bold;
   }
 
-  // stylelint-disable-next-line no-duplicate-selectors
-  & {
+  & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
     position: relative;
 
     display: block;
@@ -70,7 +68,7 @@
     padding: 8px 16px;
   }
 
-  &[disabled] {
+  &[disabled] /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     background-color: palette.$action-disabled;
 
     border: 2px solid palette.$action-disabled;
@@ -80,11 +78,11 @@
     display: block;
   }
 
-  &:hover {
+  &:hover /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     text-decoration: underline;
   }
 
-  &:focus {
+  &:focus /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     color: palette.$standard;
     background-color: palette.$outline;
 
@@ -117,13 +115,11 @@
 
   @include text.body-s;
 
-  // stylelint-disable-next-line no-duplicate-selectors
-  & {
+  & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
     @include proxima-nova.proxima-nova-bold;
   }
 
-  // stylelint-disable-next-line no-duplicate-selectors
-  & {
+  & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
     position: relative;
 
     display: block;
@@ -138,7 +134,7 @@
     padding: 8px 16px;
   }
 
-  &[disabled] {
+  &[disabled] /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     background-color: palette.$action-disabled;
 
     border: 2px solid palette.$action-disabled;
@@ -148,12 +144,12 @@
     display: block;
   }
 
-  &:hover {
+  &:hover /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     text-decoration: underline;
     color: palette.$action-standard;
   }
 
-  &:focus {
+  &:focus /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     background-color: palette.$action-standard;
     color: palette.$white;
 
@@ -186,13 +182,11 @@
 
   @include text.body-s;
 
-  // stylelint-disable-next-line no-duplicate-selectors
-  & {
+  & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
     @include proxima-nova.proxima-nova-bold;
   }
 
-  // stylelint-disable-next-line no-duplicate-selectors
-  & {
+  & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
     position: relative;
 
     display: block;
@@ -207,7 +201,7 @@
     padding: 8px 16px;
   }
 
-  &.disabled {
+  &.disabled /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     background-color: palette.$action-disabled;
 
     border: 2px solid palette.$action-disabled;
@@ -217,39 +211,36 @@
     display: block;
   }
 
-  &:link {
+  &:link /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     text-decoration: none;
 
-    // stylelint-disable-next-line no-duplicate-selectors
-    & {
+    & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
       color: palette.$white;
     }
   }
 
-  &:hover {
+  &:hover /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     text-decoration: underline;
 
-    // stylelint-disable-next-line no-duplicate-selectors
-    & {
+    & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
       color: palette.$white;
     }
   }
 
-  &:visited {
+  &:visited /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     color: palette.$white;
   }
 
-  &:focus,
-  &:active {
+  &:focus /* stylelint-disable-line nesting-selector-no-missing-scoping-root */,
+  &:active /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     background-color: palette.$white;
     color: palette.$action-standard;
   }
 
-  &:focus {
+  &:focus /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     text-decoration: underline;
 
-    // stylelint-disable-next-line no-duplicate-selectors
-    & {
+    & /* stylelint-disable-line no-duplicate-selectors */ {
       outline-color: palette.$link-outline;
     }
   }
@@ -279,13 +270,11 @@
 
   @include text.body-s;
 
-  // stylelint-disable-next-line no-duplicate-selectors
-  & {
+  & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
     @include proxima-nova.proxima-nova-bold;
   }
 
-  // stylelint-disable-next-line no-duplicate-selectors
-  & {
+  & /* stylelint-disable-line no-duplicate-selectors, nesting-selector-no-missing-scoping-root */ {
     position: relative;
 
     display: block;
@@ -300,7 +289,7 @@
     padding: 8px 16px;
   }
 
-  &.disabled {
+  &.disabled /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     background-color: palette.$action-disabled;
 
     border: 2px solid palette.$action-disabled;
@@ -310,39 +299,36 @@
     display: block;
   }
 
-  &:link {
+  &:link /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     text-decoration: none;
 
-    // stylelint-disable-next-line no-duplicate-selectors
-    & {
+    & /* stylelint-disable-line no-duplicate-selectors */ {
       color: palette.$action-standard;
     }
   }
 
-  &:hover {
+  &:hover /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     text-decoration: underline;
 
-    // stylelint-disable-next-line no-duplicate-selectors
-    & {
+    & /* stylelint-disable-line no-duplicate-selectors */ {
       color: palette.$action-standard;
     }
   }
 
-  &:visited {
+  &:visited /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     color: palette.$action-standard;
   }
 
-  &:focus,
-  &:active {
+  &:focus /* stylelint-disable-line nesting-selector-no-missing-scoping-root */,
+  &:active /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     background-color: palette.$action-standard;
     color: palette.$white;
   }
 
-  &:focus {
+  &:focus /* stylelint-disable-line nesting-selector-no-missing-scoping-root */ {
     text-decoration: underline;
 
-    // stylelint-disable-next-line no-duplicate-selectors
-    & {
+    & /* stylelint-disable-line no-duplicate-selectors */ {
       outline-color: palette.$link-outline;
     }
   }
