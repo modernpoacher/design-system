@@ -29,7 +29,7 @@
   "devDependencies": {
     "husky": "^9.1.7",
     "prettier": "^3.6.2",
-    "stylelint": "^16.24.0",
+    "stylelint": "^16.25.0",
     "stylelint-config-recommended-scss": "^16.0.2",
     "stylelint-scss": "^6.12.1"
   }
